@@ -24,7 +24,7 @@ Each device page has three sections:
 ## Support the project
 
 STV OS is free and is not sold. If it is useful to you, you can support its development at
-[estebanrios.github.io/stv/support](https://estebanrios.github.io/stv/support/).
+[littlewild47.github.io/stv/support](https://littlewild47.github.io/stv/support/).
 
 ## Licenses
 

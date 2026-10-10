@@ -24,7 +24,7 @@ Cada página de dispositivo tiene tres secciones:
 ## Apoyar el proyecto
 
 STV OS es gratuito y no se vende. Si le resulta útil, puede apoyar su desarrollo en
-[estebanrios.github.io/stv/support](https://estebanrios.github.io/stv/support/).
+[littlewild47.github.io/stv/support](https://littlewild47.github.io/stv/support/).
 
 ## Licencias
 
