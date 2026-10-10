@@ -11,6 +11,7 @@
 - [Install on a microSD card](#install-on-a-microsd-card)
 - [After installing](#after-installing)
 - [Available versions](#available-versions)
+- [Known issues](#known-issues)
 - [Verify a download](#verify-a-download)
 
 ## Which installation to choose
@@ -37,6 +38,17 @@ saves). Games and saves on the microSD card are not touched.
 **You need:** a microSD card formatted as **FAT32** with 1.5 GB free (it can be the card you will
 use for games), and the console's charger.
 
+> [!WARNING]
+> **The card must not be an old STV OS microSD system card.** The console always starts from the
+> card first when the card has a boot area, and formatting does not remove it. Use another card,
+> or erase it completely first (for example with *SD Card Formatter* and its *Overwrite format*
+> option).
+
+> [!NOTE]
+> **Cards of 64 GB or more** usually come formatted as exFAT. Reformat them as FAT32 (on macOS:
+> Disk Utility, *MS-DOS (FAT)*; on Windows, cards over 32 GB need a FAT32 formatting tool).
+> exFAT has not been tested.
+
 1. Download `stv-os-<version>-trimui-smart-pro-s-internal-memory.zip` from
    [Available versions](#available-versions) and unzip it. You get `trimui_tg5050.awimg`
    (about 1.3 GB). **Do not rename it**: the console only looks for that exact name.
@@ -50,17 +62,8 @@ use for games), and the console's charger.
 7. Delete `trimui_tg5050.awimg` from the card, or move it into a folder. A normal start does not
    install it again, but it is safer not to leave it at the root.
 
-If no bar appears and the console starts normally, the combination was not caught: turn it off
-and repeat from step 3, keeping Volume − pressed until you see the bar.
-
-> **The card must not be an old STV OS microSD system card.** The console always starts from the
-> card first when the card has a boot area, and formatting does not remove it. Use another card,
-> or erase it completely first (for example with *SD Card Formatter* and its *Overwrite format*
-> option).
->
-> **Cards of 64 GB or more** usually come formatted as exFAT. Reformat them as FAT32 (on macOS:
-> Disk Utility, *MS-DOS (FAT)*; on Windows, cards over 32 GB need a FAT32 formatting tool).
-> exFAT has not been tested.
+If no bar appears and the console starts normally, the console did not detect the combination:
+turn it off and repeat from step 3, keeping Volume − pressed until you see the bar.
 
 **Going back to the factory firmware:** put TrimUI's official `trimui_tg5050.awimg` (firmware
 v1.0.1) at the root of the card and repeat the same steps. This is the manufacturer's own
@@ -71,8 +74,8 @@ procedure; with STV OS installed it has not been tested end to end yet.
 The card becomes the console's system disk. The internal memory is not touched.
 
 **You need:** a microSD card of **16 GB or more** (everything on it is erased) and a computer with
-[Raspberry Pi Imager](https://www.raspberrypi.com/software/). A fast card (A1/A2 or U3) makes the
-first start much shorter.
+[Raspberry Pi Imager](https://www.raspberrypi.com/software/) (for Windows, macOS and Linux). A fast
+card (A1/A2 or U3) makes the first start much shorter.
 
 1. Download `stv-os-<version>-trimui-smart-pro-s-microsd.img.xz` from
    [Available versions](#available-versions). There is no need to uncompress it.
@@ -85,14 +88,14 @@ first start much shorter.
    *Initialize* or *Format*.
 6. Insert the card in the console and turn it on normally.
 
-The **first start** prepares the apps and installs the emulators. On a slow card it can take more
-than 10 minutes, with a black screen for several of them: wait without turning it off.
+> [!WARNING]
+> The **first start** prepares the apps and installs the emulators. On a slow card it can take more
+> than 10 minutes, with a black screen for several of them. Wait without turning the console off.
 
-To use the whole card: **STV Settings › Storage › Expand to the whole card**, then restart.
+> [!TIP]
+> To use the whole card, open **STV Settings › Storage › Expand to the whole card** and restart.
 
 **Going back to the factory firmware:** turn the console off and remove the card.
-
-> balenaEtcher 2.1.7 does not list any disk on macOS 26; Raspberry Pi Imager works.
 
 ## After installing
 
@@ -127,17 +130,40 @@ regulatory domain. Full release notes: [on GitHub](https://github.com/littlewild
 **Updates:** from the next version on, each release also includes the update packages that install
 from the console without losing data (STV Settings › System update). The manual explains how.
 
+## Known issues
+
+This is a beta. Known limitations of 0.0.1-beta:
+
+- Tested on one console; other production batches might behave differently.
+- ROM cards formatted as exFAT have not been tested: use FAT32.
+- Going back to the factory firmware with TrimUI's official file is the manufacturer's procedure,
+  but it has not been tested end to end with STV OS installed.
+- The system is signed with Android's public test keys and SELinux runs in permissive mode: install
+  apps only from sources you trust.
+- FinalBurn Neo (Neo Geo and arcade) is not included: it downloads from *Manage Systems* the first
+  time one of those games is opened.
+- balenaEtcher 2.1.7 does not list any disk on macOS 26: use Raspberry Pi Imager.
+
 ## Verify a download
 
 Each release publishes `SHA256SUMS`, signed with the key in [`keys/`](../../keys/).
+
+On macOS and Linux:
 
 ```bash
 shasum -a 256 -c SHA256SUMS --ignore-missing
 ```
 
+On Windows (PowerShell), compute the checksum and compare it with the file's line in `SHA256SUMS`:
+
+```powershell
+Get-FileHash .\stv-os-0.0.1-beta-trimui-smart-pro-s-internal-memory.zip -Algorithm SHA256
+```
+
+The signature is checked with OpenSSL 3:
+
 ```bash
 openssl pkeyutl -verify -pubin -inkey stv-release-ed25519.pub.pem -rawin -in SHA256SUMS -sigfile SHA256SUMS.sig
 ```
 
-The second command needs OpenSSL 3 (the `openssl` that ships with macOS cannot check Ed25519
-signatures; the Homebrew one can).
+The `openssl` that ships with macOS cannot check Ed25519 signatures; the Homebrew one can.

@@ -9,6 +9,13 @@
 Everything STV OS adds to the console, screen by screen. It applies to version **0.0.1-beta** and to
 both installations (internal memory and microSD); where they differ, it says so.
 
+> [!NOTE]
+> **Terms used in this manual.** *Internal memory installation* and *microSD installation* are the two
+> ways to install STV OS (see [Releases](releases.md#which-installation-to-choose)). *Internal
+> storage* is Android's shared storage, the one a computer sees over USB and where folders like `Roms`
+> and `Download` live: in the microSD installation it is inside the card. The *ROM card* is the
+> microSD card of the internal memory installation.
+
 - [Buttons and shortcuts](#buttons-and-shortcuts)
 - [The home screen](#the-home-screen)
 - [Control center (HOME)](#control-center-home)
@@ -22,6 +29,7 @@ both installations (internal memory and microSD); where they differ, it says so.
 - [Saves](#saves)
 - [Updates](#updates)
 - [Problems and answers](#problems-and-answers)
+- [Reporting a problem](#reporting-a-problem)
 
 ## Buttons and shortcuts
 
@@ -268,3 +276,15 @@ and that the name has no more than three dots. Then press **START** on the home 
 **Licenses.** **STV Settings › About this console › Licenses** lists every third-party component,
 its license, its source and whether STV OS modified it. STV OS is free and is not sold; it does not
 include games or BIOS files.
+
+## Reporting a problem
+
+Include:
+
+- the version and build shown in **STV Settings › About this console** (for example,
+  *0.0.1-beta · build f195*);
+- the installation type (internal memory or microSD);
+- what you did, what you expected and what happened, with a screenshot if possible (**HOME**, then
+  **X**).
+
+Report it in this repository's [Issues](https://github.com/littlewild47/stv-android-releases/issues).

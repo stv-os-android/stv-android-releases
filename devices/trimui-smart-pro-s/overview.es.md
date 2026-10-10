@@ -8,9 +8,9 @@
 
 ## Qué es STV OS
 
-STV OS es un sistema Android 13 hecho para la TrimUI Smart Pro S. Parte del Android de una placa
-con el mismo procesador (Allwinner A523) y rehace lo que la consola necesita: un kernel Linux
-propio, un sistema reducido para que entre en 1 GB de RAM, apps propias para todo lo que la consola
+STV OS es un sistema Android 13 hecho para la TrimUI Smart Pro S. Se basa en el Android de la Radxa
+Cubie A5E, una placa con el mismo procesador (Allwinner A523), y rehace lo que la consola necesita:
+un kernel Linux propio, un sistema reducido para que quepa en 1 GB de RAM, apps propias para todo lo que la consola
 hace fuera de un juego y un emulador de PSP ajustado para este hardware.
 
 Se instala de una de dos maneras, y las dos se mantienen:
@@ -22,19 +22,20 @@ Se instala de una de dos maneras, y las dos se mantienen:
 
 ## El objetivo: PSP
 
-La PSP es el sistema más exigente que esta consola puede correr bien, y es la razón del proyecto.
+La PSP es el sistema más exigente que esta consola puede ejecutar bien, y es la razón del proyecto.
 El trabajo se mide escena por escena en los juegos más pesados, con la misma compilación y los
 mismos ajustes, antes y después de cada cambio.
 
-| Juego y escena | Antes | Con STV OS | Condiciones |
+| Juego y escena | Antes de los cambios de STV (misma consola) | Con STV OS | Condiciones |
 |---|---|---|---|
 | *Dante's Inferno*, una pelea con nueve personajes | 58-69 % de la velocidad completa | **99,5 %** | misma resolución e imagen, sin overclock |
 | *God of War: Ghost of Sparta*, la pelea con Callisto | cerca del 56 % | **60 fps** | resolución 2× PSP |
 | *God of War: Ghost of Sparta*, un combate con varios enemigos | 46,4 fps | **59,5 fps** (mediana) | 1271×720, la pantalla a 1:1 |
 
 Estos resultados son de **PPSSPP - STV**, una versión de PPSSPP ajustada a la GPU de la consola
-(Mali-G57) y a su memoria: sombras más baratas, menos dibujos inútiles, copias de texturas
-limitadas a lo que se usa y un hilo de gráficos que ya no espera en candados. El PPSSPP oficial
+(Mali-G57) y a su memoria: sombras más ligeras de calcular, menos dibujos inútiles, copias de
+texturas limitadas a lo que se usa y un hilo de gráficos que ya no se queda esperando a otros
+procesos. El PPSSPP oficial
 también viene instalado, como alternativa.
 
 ## Qué más cambia
@@ -63,5 +64,20 @@ de instalar:
 - No es un sistema oficial de TrimUI. En la memoria interna reemplaza el firmware de fábrica (la
   vuelta atrás es el archivo de firmware oficial de TrimUI, instalado de la misma forma).
 - El sistema está firmado con las claves de prueba públicas de Android y SELinux funciona en
-  modo permisivo. Instale apps sólo de fuentes de confianza.
+  modo permisivo. Instale apps solo de fuentes de confianza.
 - STV OS no incluye juegos ni archivos de BIOS.
+
+## Créditos
+
+STV OS se apoya en el trabajo de muchos proyectos:
+
+- **Radxa**: la base de Android 13 para el Allwinner A523 (Cubie A5E).
+- **Orange Pi**: el árbol del kernel Linux 5.15 para el A523.
+- **KNULLI**: las piezas de arranque de las que parte STV OS en esta consola.
+- **TrimUI**: la consola, y su cargador de arranque y su servicio de entrada de fábrica.
+- **PPSSPP**, **RetroArch** y los núcleos de **libretro**, **Mupen64Plus FZ**, **Pegasus Frontend**,
+  **Aurora Store** y **LeanKeyboard**.
+- Las fuentes **IBM Plex**.
+
+La lista completa, con la licencia de cada uno, está en `NOTICE.txt` (se publica con cada versión) y
+en **Ajustes STV › Acerca de la consola › Licencias**.

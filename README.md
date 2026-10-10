@@ -30,4 +30,4 @@ STV OS is free and is not sold. If it is useful to you, you can support its deve
 
 STV OS includes third-party software, each under its own license. Every release ships a
 `NOTICE.txt` with the full list and the source code that the GPL requires (the kernel and the
-programs we modified). STV OS does not include games or BIOS files.
+programs that STV OS modifies). STV OS does not include games or BIOS files.

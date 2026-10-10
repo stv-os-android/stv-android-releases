@@ -6,6 +6,15 @@
 
 **[Overview](overview.md)** · **[Releases](releases.md)** · **[Manual](manual.md)**
 
+## Quick start
+
+1. **Choose** where to install it: [internal memory or microSD card](releases.md#which-installation-to-choose).
+2. **Download** the file for that installation from [Available versions](releases.md#available-versions).
+3. **Install** it following the steps: [internal memory](releases.md#install-on-the-internal-memory) or
+   [microSD card](releases.md#install-on-a-microsd-card).
+4. **Set up** the language, time zone and Wi-Fi in STV Settings, and copy your games to
+   `Roms/<system>/` ([manual](manual.md#games-and-the-roms-folder)).
+
 ![The STV OS home screen on the TrimUI Smart Pro S](images/en/home.png)
 
 | | |

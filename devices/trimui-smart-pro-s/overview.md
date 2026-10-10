@@ -8,8 +8,8 @@
 
 ## What STV OS is
 
-STV OS is an Android 13 system made for the TrimUI Smart Pro S. It starts from the Android of a
-board with the same chip (Allwinner A523) and rebuilds what the console needs: its own Linux kernel,
+STV OS is an Android 13 system made for the TrimUI Smart Pro S. It is based on the Android build for
+the Radxa Cubie A5E, a board with the same chip (Allwinner A523), and rebuilds what the console needs: its own Linux kernel,
 a system trimmed to fit in 1 GB of RAM, its own apps for everything the console does outside a game,
 and a PSP emulator tuned for this hardware.
 
@@ -26,7 +26,7 @@ The PSP is the most demanding system this console can run well, and it is the re
 project. The work is measured scene by scene in the heaviest games, with the same build and the
 same settings, before and after each change.
 
-| Game and scene | Before | With STV OS | Conditions |
+| Game and scene | Before the STV changes (same console) | With STV OS | Conditions |
 |---|---|---|---|
 | *Dante's Inferno*, a fight with nine characters | 58-69 % of full speed | **99.5 %** | same resolution and image, no overclock |
 | *God of War: Ghost of Sparta*, the fight with Callisto | about 56 % | **60 fps** | 2× PSP resolution |
@@ -34,7 +34,7 @@ same settings, before and after each change.
 
 These results come from **PPSSPP - STV**, a version of PPSSPP adjusted for the console's GPU (Mali-G57)
 and memory: cheaper shadows, fewer wasted draws, texture copies limited to what is used, and a
-graphics thread that no longer waits on locks. The official PPSSPP is also installed, as an
+graphics thread that no longer sits waiting for other work. The official PPSSPP is also installed, as an
 alternative.
 
 ## What else changes
@@ -64,3 +64,18 @@ installing:
 - The system is signed with Android's public test keys and SELinux runs in permissive mode.
   Install apps only from sources you trust.
 - STV OS does not include games or BIOS files.
+
+## Credits
+
+STV OS is built on the work of many projects:
+
+- **Radxa**: the Android 13 base for the Allwinner A523 (Cubie A5E).
+- **Orange Pi**: the Linux 5.15 kernel tree for the A523.
+- **KNULLI**: the boot pieces that STV OS starts from on this console.
+- **TrimUI**: the console, and its stock boot loader and input daemon.
+- **PPSSPP**, **RetroArch** and the **libretro** cores, **Mupen64Plus FZ**, **Pegasus Frontend**,
+  **Aurora Store** and **LeanKeyboard**.
+- The **IBM Plex** fonts.
+
+The full list, with each license, is in `NOTICE.txt` (published with every release) and in
+**STV Settings › About this console › Licenses**.
