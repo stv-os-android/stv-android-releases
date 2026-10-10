@@ -8,6 +8,8 @@
 
 **Última versión:** 0.0.1-beta (2026-10-10)
 
+**Qué es STV OS**, qué cambia en la consola y los resultados medidos en PSP: [Presentación](overview.es.md).
+
 ## ¿Dónde se instala?
 
 - **Memoria interna:** reemplaza el firmware de fábrica.

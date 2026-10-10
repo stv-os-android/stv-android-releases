@@ -8,6 +8,8 @@
 
 **Latest version:** 0.0.1-beta (2026-10-10)
 
+**What STV OS is**, what it changes in the console and the measured PSP results: [Overview](overview.md).
+
 ## Where does it install?
 
 - **Internal memory:** replaces the factory firmware.
