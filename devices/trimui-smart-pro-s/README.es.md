@@ -29,4 +29,11 @@ Hay un archivo para cada instalación en [Versiones disponibles](releases.es.md#
 ## ¿Qué hago después de instalar?
 
 Siga [Después de instalar](releases.es.md#después-de-instalar): idioma, zona horaria, Wi-Fi y dónde copiar
-los juegos. El [manual](manual.es.md) explica el resto.
+los juegos.
+
+## Manual
+
+Cómo se usa la consola con STV OS: botones y atajos, centro de control, apps abiertas, Ajustes STV,
+Administrar Sistemas, emuladores, PPSSPP - STV, juegos, partidas, actualizaciones y solución de problemas.
+
+[Abrir el manual](manual.es.md)

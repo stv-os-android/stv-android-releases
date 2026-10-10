@@ -13,6 +13,7 @@
 - [Ajustes STV](#ajustes-stv)
 - [Administrar Sistemas](#administrar-sistemas)
 - [Emuladores](#emuladores)
+- [PPSSPP - STV](#ppsspp---stv)
 - [Los juegos y la carpeta Roms](#los-juegos-y-la-carpeta-roms)
 - [Partidas](#partidas)
 - [Actualizaciones](#actualizaciones)
@@ -169,7 +170,7 @@ izquierda y derecha ajustan.
 
 *Administrar Sistemas* administra la biblioteca de juegos. Un *sistema* es una consola emulada (PSP,
 Nintendo 64, Game Boy…): la app agrega sistemas, instala sus cores de emulador, busca carátulas y respalda
-partidas, todo sin computadora. Está en el sistema **Android** de la pantalla de inicio.
+partidas. Está en el sistema **Android** de la pantalla de inicio.
 
 ![Administrar Sistemas](images/es/systems.png)
 
@@ -193,13 +194,46 @@ STV OS instala y configura los emuladores. Cada sistema se abre con el de esta t
 
 | Sistema | Emulador | Notas |
 |---|---|---|
-| PSP | **PPSSPP - STV** (predeterminado) y el PPSSPP oficial | Optimizado para esta consola. Resoluciones extra *2.25x PSP (STV)* y *Panel 1:1 (STV)* en Gráficos › Resolución de renderizado. Los ajustes se pueden guardar por juego |
+| PSP | **PPSSPP - STV** (predeterminado) y el PPSSPP oficial | [Optimizado para esta consola](#ppsspp---stv) |
 | Nintendo 64 | Mupen64Plus FZ | GLideN64, el renderizador más rápido en esta consola |
 | PlayStation | RetroArch (PCSX-ReARMed) | Funciona sin archivo de BIOS en la mayoría de los juegos |
 | Game Boy Advance | RetroArch (mGBA) | |
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
 | Neo Geo, arcade, CPS-1, CPS-2 | RetroArch (FinalBurn Neo) | **No viene incluido** (su licencia solo permite el uso no comercial). La primera vez que se abre uno de estos juegos, *Administrar Sistemas* ofrece *Instalar core* (necesita Wi-Fi, unos 70 MB) |
 | Otros | RetroArch | Se agregan desde el catálogo de *Administrar Sistemas* |
+
+## PPSSPP - STV
+
+PPSSPP - STV es una versión de PPSSPP 1.20.4 adaptada al hardware de esta consola: el Allwinner A523, su GPU
+Mali-G57, 1 GB de RAM y la pantalla de 1280×720. Es el emulador de PSP predeterminado; el PPSSPP oficial
+está instalado a su lado. Cada cambio se midió en la consola, escena por escena, y mantiene la imagen
+idéntica a la original ([resultados](overview.es.md#rendimiento-en-psp)).
+
+Lo que se ve:
+
+- **Resoluciones para esta pantalla**, en *Gráficos › Resolución de renderizado*: *2.25x PSP (STV)*
+  (1080×612) y *Panel 1:1 (STV)*, el tamaño exacto de la pantalla, más pasos intermedios (1.25x, 1.5x,
+  1.75x, 2.5x, 2.75x).
+- **Frame rate cap (STV)**: fija un juego en 30 fps, para los títulos diseñados para 30, con un ritmo de
+  cuadros parejo.
+- **Ajustes por juego**: los ajustes cambiados durante la partida se guardan para ese juego, no para todos.
+- **Botones en la disposición de la PSP**, iguales para todos los juegos, y el menú de pausa en **L2**.
+
+Cómo se logra:
+
+- **Gráficos en su propio hilo.** La CPU emulada ya no espera a los comandos gráficos: +10 % de velocidad y
+  61 % menos cortes de audio en las escenas más pesadas.
+- **Renderizado ajustado a la Mali-G57**, una GPU por mosaicos: los borrados de pantalla se dibujan como
+  geometría, el área de render se alinea al tamaño del mosaico y hay menos pasadas por memoria por cuadro.
+- **Sombras más baratas.** Los volúmenes de sombra de los *God of War* y de *Dante's Inferno* se parten en
+  tramos cortos y cada proyección se recorta a la parte de la pantalla que puede cambiar.
+- **Sin trabajo inútil.** Se omiten los dibujos que no cambian nada, las copias de texturas se limitan a lo
+  escrito y las reinterpretaciones de formato a lo que cambió desde la última; los búferes auxiliares, como
+  los mapas de sombras, pueden renderizarse a menor escala por juego.
+- **Sin reservas de memoria en el camino crítico.** El asignador de memoria de la consola funciona en modo
+  de poca RAM y es lento bajo carga; el hilo gráfico lo evita.
+- **PSP Color** (la respuesta de color de la pantalla original) aplicado en la pasada final, en punto
+  flotante de 16 bits.
 
 ## Los juegos y la carpeta Roms
 
@@ -238,7 +272,7 @@ guardar, y la consola lo avisa. No retire la tarjeta con un juego abierto.
 
 ## Actualizaciones
 
-STV OS se actualiza desde la consola, sin computadora y sin reinstalar. Cada versión llega como un paquete
+STV OS se actualiza desde la consola, sin reinstalar. Cada versión llega como un paquete
 firmado que conserva juegos, partidas, apps y ajustes, y la versión anterior queda disponible para volver.
 
 1. Copie el paquete de actualización (`STV-TSPS-update-<compilación>.zip`) en la carpeta `STV/update` del

@@ -26,7 +26,7 @@ juegos más pesados, con los mismos ajustes antes y después.
 
 Todos los resultados son sin overclock y sin bajar la resolución ni la calidad. Son de **PPSSPP - STV**, una
 versión de PPSSPP optimizada para la GPU de la consola (Mali-G57) y su memoria. El PPSSPP oficial también
-viene instalado.
+viene instalado. Qué cambia y cómo: [PPSSPP - STV](manual.es.md#ppsspp---stv) en el manual.
 
 ## Qué más cambia
 

@@ -28,4 +28,11 @@ There is one file per installation type in [Available versions](releases.md#avai
 ## What do I do after installing?
 
 Follow [After installing](releases.md#after-installing): language, time zone, Wi-Fi and where to copy your
-games. The [manual](manual.md) covers the rest.
+games.
+
+## Manual
+
+How to use the console with STV OS: buttons and shortcuts, control center, open apps, STV Settings, Manage
+Systems, emulators, PPSSPP - STV, games, saves, updates and troubleshooting.
+
+[Open the manual](manual.md)

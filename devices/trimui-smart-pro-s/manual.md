@@ -13,6 +13,7 @@
 - [STV Settings](#stv-settings)
 - [Manage Systems](#manage-systems)
 - [Emulators](#emulators)
+- [PPSSPP - STV](#ppsspp---stv)
 - [Games and the Roms folder](#games-and-the-roms-folder)
 - [Saves](#saves)
 - [Updates](#updates)
@@ -167,8 +168,7 @@ remain available under *System*. **A** chooses, **B** goes back, left and right 
 ## Manage Systems
 
 *Manage Systems* manages the game library. A *system* is an emulated console (PSP, Nintendo 64, Game Boy…):
-the app adds systems, installs their emulator cores, finds box art and backs up saves, all without a
-computer. It is in the **Android** system of the home screen.
+the app adds systems, installs their emulator cores, finds box art and backs up saves. It is in the **Android** system of the home screen.
 
 ![Manage Systems](images/en/systems.png)
 
@@ -192,13 +192,43 @@ STV OS installs and configures the emulators. Each system opens with the one in 
 
 | System | Emulator | Notes |
 |---|---|---|
-| PSP | **PPSSPP - STV** (default) and the official PPSSPP | Optimized for this console. Extra resolutions *2.25x PSP (STV)* and *Panel 1:1 (STV)* in Graphics › Rendering resolution. Settings can be saved per game |
+| PSP | **PPSSPP - STV** (default) and the official PPSSPP | [Optimized for this console](#ppsspp---stv) |
 | Nintendo 64 | Mupen64Plus FZ | GLideN64, the fastest renderer on this console |
 | PlayStation | RetroArch (PCSX-ReARMed) | Works without a BIOS file for most games |
 | Game Boy Advance | RetroArch (mGBA) | |
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
 | Neo Geo, arcade, CPS-1, CPS-2 | RetroArch (FinalBurn Neo) | **Not included** (its license allows only non-commercial use). The first time you open one of these games, *Manage Systems* offers *Install core* (needs Wi-Fi, about 70 MB) |
 | Others | RetroArch | Added from the catalog in *Manage Systems* |
+
+## PPSSPP - STV
+
+PPSSPP - STV is a version of PPSSPP 1.20.4 adapted to this console's hardware: the Allwinner A523, its
+Mali-G57 GPU, 1 GB of RAM and the 1280×720 screen. It is the default PSP emulator; the official PPSSPP is
+installed next to it. Every change was measured on the console, scene by scene, and keeps the image identical
+to the original ([results](overview.md#psp-performance)).
+
+What you see:
+
+- **Resolutions for this screen**, in *Graphics › Rendering resolution*: *2.25x PSP (STV)* (1080×612) and
+  *Panel 1:1 (STV)*, the exact size of the screen, plus intermediate steps (1.25x, 1.5x, 1.75x, 2.5x, 2.75x).
+- **Frame rate cap (STV)**: holds a game at 30 fps, for titles designed for 30, with steady frame pacing.
+- **Settings per game**: the settings changed while playing are saved for that game, not for all.
+- **Buttons in the PSP layout**, the same for every game, and the pause menu on **L2**.
+
+How it gets there:
+
+- **Graphics on their own thread.** The emulated CPU no longer waits for the graphics commands: +10% of
+  speed and 61% fewer audio cuts in the heaviest scenes.
+- **Rendering adjusted to the Mali-G57**, a tile-based GPU: screen clears drawn as geometry, render area
+  aligned to the tile size and fewer memory passes per frame.
+- **Cheaper shadows.** The shadow volumes of the *God of War* games and *Dante's Inferno* are split into short
+  segments and each projection is clipped to the part of the screen it can change.
+- **No wasted work.** Draws that change nothing are skipped, texture copies are limited to what was written
+  and format reinterpretations to what changed since the last one; auxiliary buffers such as shadow maps can
+  render at a lower scale per game.
+- **No memory allocations in the hot path.** The console's memory allocator runs in low-RAM mode and is
+  slow under load; the graphics thread avoids it.
+- **PSP Color** (the original screen's color response) applied in the final pass, in 16-bit floating point.
 
 ## Games and the Roms folder
 
@@ -235,7 +265,7 @@ the console warns about it. Do not remove the card while a game is open.
 
 ## Updates
 
-STV OS updates from the console, without a computer and without reinstalling. Each version comes as a
+STV OS updates from the console, without reinstalling. Each version comes as a
 signed package that keeps games, saves, apps and settings, and the previous version stays available to go
 back to.
 

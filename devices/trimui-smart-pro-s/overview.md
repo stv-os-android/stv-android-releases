@@ -26,7 +26,7 @@ heaviest games, with the same settings before and after.
 
 All results are without overclocking and without lowering resolution or quality. They come from
 **PPSSPP - STV**, a version of PPSSPP optimized for the console's GPU (Mali-G57) and memory. The official
-PPSSPP is also installed.
+PPSSPP is also installed. What changes and how: [PPSSPP - STV](manual.md#ppsspp---stv) in the manual.
 
 ## What else changes
 
