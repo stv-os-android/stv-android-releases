@@ -8,7 +8,7 @@
 
 STV OS es un custom firmware basado en Android 13, hecho para la TrimUI Smart Pro S. Parte del Android de la
 Radxa Cubie A5E, una placa con el mismo procesador (Allwinner A523), y suma un kernel Linux propio, apps
-pensadas para el mando y un emulador de PSP optimizado para esta consola.
+propias para la consola y un emulador de PSP optimizado para esta consola.
 
 Se instala en la memoria interna o en una tarjeta microSD:
 [cuál elegir](releases.es.md#qué-instalación-elegir).
@@ -35,8 +35,9 @@ viene instalado.
   cargar y el ventilador automático.
 - **Memoria.** Android sin las partes que una portátil no necesita, para que los juegos tengan más de su
   1 GB de RAM.
-- **Apps STV.** Centro de control (HOME), apps abiertas (MENU), avisos, pantalla de bloqueo, indicador de
-  volumen y capturas de pantalla.
+- **Apps STV.** La interfaz de Android está hecha para pantallas táctiles. STV OS la reemplaza por la suya:
+  centro de control (HOME), apps abiertas (MENU), avisos, pantalla de bloqueo, indicador de volumen y
+  capturas de pantalla.
 - **Menú de juegos.** Pegasus con el tema STV. *Administrar Sistemas* agrega sistemas, instala cores de
   emuladores, busca carátulas y respalda partidas, todo desde la consola.
 - **Otros sistemas.** RetroArch para GBA, PS1, NES, SNES, Game Boy y más; Mupen64Plus FZ para Nintendo 64.

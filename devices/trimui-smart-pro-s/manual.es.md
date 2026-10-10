@@ -45,7 +45,8 @@ Dentro de cada emulador:
 
 ## La pantalla de inicio
 
-La consola arranca en **Pegasus** con el tema STV: una pantalla por sistema, con la carátula de cada juego.
+La pantalla de inicio es **Pegasus**, un lanzador de juegos con el tema STV. Muestra la biblioteca un
+sistema a la vez, con la carátula de cada juego, y abre cada juego con su emulador.
 
 ![Pantalla de inicio](images/es/home.png)
 
@@ -71,7 +72,9 @@ Aurora Store y cualquier app que se instale.
 
 ## Centro de control (HOME)
 
-**HOME** abre un panel a la derecha, sobre lo que haya en pantalla.
+El centro de control es el panel de ajustes rápidos de la consola. **HOME** lo abre sobre lo que haya en
+pantalla, para cambiar el brillo, el Wi-Fi, el ventilador o el perfil de rendimiento sin salir del juego.
+También saca capturas de pantalla y abre los avisos.
 
 ![Centro de control](images/es/control-center-display.png)
 
@@ -99,8 +102,9 @@ actuales de la CPU y la GPU.
 
 ## Apps abiertas (MENU)
 
-**MENU** muestra las apps abiertas y qué hace cada una (en juego, en uso, en segundo plano). Arriba se ve la
-memoria libre.
+La vista de apps abiertas es el selector de apps de la consola. **MENU** muestra las apps abiertas y qué hace
+cada una (en juego, en uso, en segundo plano), para volver a un juego sin abrirlo de nuevo o cerrar lo que no
+se usa y liberar memoria. Arriba se ve la memoria libre.
 
 ![Apps abiertas](images/es/open-apps.png)
 
@@ -109,16 +113,16 @@ reinicia Pegasus.
 
 ## Avisos
 
-Los avisos muestran la batería baja, la temperatura alta, un cable USB conectado, una captura guardada y las
-notificaciones de las apps. **START** en el centro de control los abre: **A** abre uno, **X** lo descarta e
+La consola no tiene barra de estado: los avisos son donde informa la batería baja, la temperatura alta, un
+cable USB conectado o una captura guardada, y adonde llegan las notificaciones de las apps. **START** en el centro de control los abre: **A** abre uno, **X** lo descarta e
 **Y** los limpia todos. Con *Vibración en avisos* encendida, la consola vibra una vez por cada aviso nuevo.
 
 ![Avisos](images/es/notices.png)
 
 ## Pantalla de bloqueo
 
-Al despertar, la consola muestra el reloj, la fecha y la batería. Pulse **L1 + R1** a la vez para
-desbloquearla.
+La pantalla de bloqueo evita pulsaciones accidentales cuando la consola despierta. Muestra el reloj, la fecha
+y la batería; pulse **L1 + R1** a la vez para desbloquearla.
 
 ![Pantalla de bloqueo](images/es/lock-screen.png)
 
@@ -128,8 +132,10 @@ dígitos. El PIN se escribe con el mando: la cruz direccional mueve la selecció
 
 ## Ajustes STV
 
-La app de ajustes de la consola, pensada para el mando: **A** elige, **B** vuelve, izquierda y derecha
-ajustan.
+Ajustes STV es la app de ajustes de la consola. Reemplaza los ajustes de Android, hechos para pantallas
+táctiles, por una lista con lo que importa en esta consola: pantalla, sonido, LEDs, bloqueo, almacenamiento,
+actualizaciones. Los ajustes completos de Android siguen disponibles en *Sistema*. **A** elige, **B** vuelve,
+izquierda y derecha ajustan.
 
 ![Ajustes STV](images/es/settings.png)
 
@@ -161,8 +167,9 @@ ajustan.
 
 ## Administrar Sistemas
 
-*Administrar Sistemas*, en el sistema **Android** de la pantalla de inicio, agrega sistemas, instala cores de
-emuladores, busca carátulas y respalda partidas, todo desde la consola.
+*Administrar Sistemas* administra la biblioteca de juegos. Un *sistema* es una consola emulada (PSP,
+Nintendo 64, Game Boy…): la app agrega sistemas, instala sus cores de emulador, busca carátulas y respalda
+partidas, todo sin computadora. Está en el sistema **Android** de la pantalla de inicio.
 
 ![Administrar Sistemas](images/es/systems.png)
 
@@ -181,6 +188,8 @@ emuladores, busca carátulas y respalda partidas, todo desde la consola.
 </table>
 
 ## Emuladores
+
+STV OS instala y configura los emuladores. Cada sistema se abre con el de esta tabla:
 
 | Sistema | Emulador | Notas |
 |---|---|---|
@@ -210,6 +219,9 @@ para actualizar la biblioteca.
 
 ## Partidas
 
+Cada emulador guarda sus partidas en su propia carpeta. *Administrar Sistemas* las respalda todas en un solo
+archivo.
+
 | Emulador | Instalación en memoria interna | Instalación en microSD |
 |---|---|---|
 | PSP | En la tarjeta: `Android/data/org.ppsspp.ppsspp.stv/files/PSP/` | Almacenamiento interno, misma ruta |
@@ -226,14 +238,16 @@ guardar, y la consola lo avisa. No retire la tarjeta con un juego abierto.
 
 ## Actualizaciones
 
+STV OS se actualiza desde la consola, sin computadora y sin reinstalar. Cada versión llega como un paquete
+firmado que conserva juegos, partidas, apps y ajustes, y la versión anterior queda disponible para volver.
+
 1. Copie el paquete de actualización (`STV-TSPS-update-<compilación>.zip`) en la carpeta `STV/update` del
    almacenamiento interno. También sirve la carpeta `Download` y, en la instalación en memoria interna,
    `STV/update` en la tarjeta.
 2. Abra **Ajustes STV › Actualización del sistema**. Encuentra el paquete, muestra sus notas y pide confirmar.
 3. La consola prepara la actualización en unos 2 minutos mientras se puede seguir usando; después reinicia y
    la instala en 3 a 4 minutos. No la apague.
-4. Juegos, partidas, apps y ajustes se conservan. La versión anterior queda guardada: **Volver a
-   <compilación>** regresa a ella.
+4. La consola reinicia con la versión nueva. **Volver a <compilación>** regresa a la anterior.
 
 La actualización necesita un 40 % de batería o el cargador conectado. Un paquete hecho para el otro tipo de
 instalación se rechaza antes de escribir nada, y solo se aceptan paquetes firmados.

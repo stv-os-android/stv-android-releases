@@ -45,7 +45,8 @@ Inside each emulator:
 
 ## The home screen
 
-The console starts in **Pegasus** with the STV theme: one screen per system, with the box art of each game.
+The home screen is **Pegasus**, a game launcher with the STV theme. It shows the library one system at a
+time, with the box art of each game, and opens each game with its emulator.
 
 ![Home screen](images/en/home.png)
 
@@ -71,7 +72,9 @@ and any app you install.
 
 ## Control center (HOME)
 
-**HOME** opens a panel on the right, over whatever is on screen.
+The control center is the console's quick-settings panel. **HOME** opens it over whatever is on screen, so
+you can change the brightness, the Wi-Fi, the fan or the performance profile without leaving the game. It
+also takes screenshots and opens the notices.
 
 ![Control center](images/en/control-center-display.png)
 
@@ -98,8 +101,9 @@ more heat and battery use. Below the profiles, the panel shows the current CPU a
 
 ## Open apps (MENU)
 
-**MENU** lists the open apps and what each one is doing (playing, in use, in the background). The free memory
-is shown at the top.
+The open apps view is the console's app switcher. **MENU** shows the open apps and what each one is doing
+(playing, in use, in the background), to return to a game without reopening it, or to close what is not in
+use and free memory. The free memory is shown at the top.
 
 ![Open apps](images/en/open-apps.png)
 
@@ -108,7 +112,8 @@ restarts Pegasus.
 
 ## Notices
 
-Notices show low battery, high temperature, a connected USB cable, a saved screenshot and app notifications.
+The console has no status bar: notices are where it reports a low battery, a high temperature, a connected
+USB cable or a saved screenshot, and where app notifications go.
 **START** in the control center opens them: **A** opens one, **X** dismisses it and **Y** clears them all.
 With *Vibration on alerts* on, the console vibrates once for each new notice.
 
@@ -116,8 +121,8 @@ With *Vibration on alerts* on, the console vibrates once for each new notice.
 
 ## Lock screen
 
-When it wakes up, the console shows the clock, the date and the battery. Press **L1 + R1** together to unlock
-it.
+The lock screen prevents accidental presses when the console wakes up. It shows the clock, the date and the
+battery; press **L1 + R1** together to unlock it.
 
 ![Lock screen](images/en/lock-screen.png)
 
@@ -127,7 +132,9 @@ confirms.
 
 ## STV Settings
 
-The console's settings app, designed for the gamepad: **A** chooses, **B** goes back, left and right adjust.
+STV Settings is the console's settings app. It replaces Android's settings, made for touch screens, with a
+list of what matters on this console: display, sound, LEDs, lock, storage, updates. The full Android settings
+remain available under *System*. **A** chooses, **B** goes back, left and right adjust.
 
 ![STV Settings](images/en/settings.png)
 
@@ -159,8 +166,9 @@ The console's settings app, designed for the gamepad: **A** chooses, **B** goes 
 
 ## Manage Systems
 
-*Manage Systems*, in the **Android** system of the home screen, adds systems, installs emulator cores, finds
-box art and backs up saves, all from the console.
+*Manage Systems* manages the game library. A *system* is an emulated console (PSP, Nintendo 64, Game Boy…):
+the app adds systems, installs their emulator cores, finds box art and backs up saves, all without a
+computer. It is in the **Android** system of the home screen.
 
 ![Manage Systems](images/en/systems.png)
 
@@ -179,6 +187,8 @@ box art and backs up saves, all from the console.
 </table>
 
 ## Emulators
+
+STV OS installs and configures the emulators. Each system opens with the one in this table:
 
 | System | Emulator | Notes |
 |---|---|---|
@@ -207,6 +217,8 @@ system. After copying games, press **START** on the home screen to refresh the l
 
 ## Saves
 
+Each emulator keeps its saves in its own folder. *Manage Systems* backs them all up in one file.
+
 | Emulator | Internal memory installation | microSD installation |
 |---|---|---|
 | PSP | On the card: `Android/data/org.ppsspp.ppsspp.stv/files/PSP/` | Internal storage, same path |
@@ -223,13 +235,17 @@ the console warns about it. Do not remove the card while a game is open.
 
 ## Updates
 
+STV OS updates from the console, without a computer and without reinstalling. Each version comes as a
+signed package that keeps games, saves, apps and settings, and the previous version stays available to go
+back to.
+
 1. Copy the update package (`STV-TSPS-update-<build>.zip`) to the `STV/update` folder of the internal storage.
    The `Download` folder also works and, in the internal memory installation, so does `STV/update` on the
    card.
 2. Open **STV Settings › System update**. It finds the package, shows its notes and asks to confirm.
 3. The console prepares the update in about 2 minutes while you keep using it, then restarts and installs it
    in 3 to 4 minutes. Do not turn it off.
-4. Games, saves, apps and settings stay. The previous version is kept: **Go back to <build>** returns to it.
+4. The console restarts with the new version. **Go back to <build>** returns to the previous one.
 
 The update needs 40% battery or the charger connected. A package made for the other installation type is
 rejected before anything is written, and only signed packages are accepted.
