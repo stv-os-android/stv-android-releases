@@ -323,4 +323,4 @@ Incluya:
 - el tipo de instalación (memoria interna o microSD);
 - qué hizo, qué esperaba y qué pasó, con una captura de pantalla si es posible (**HOME** y después **X**).
 
-Repórtelo en los [Issues](https://github.com/littlewild47/stv-android-releases/issues) de este repositorio.
+Repórtelo en los [Issues](https://github.com/stv-os-android/stv-android-releases/issues) de este repositorio.

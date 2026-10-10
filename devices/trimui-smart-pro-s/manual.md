@@ -315,4 +315,4 @@ Include:
 - the installation type (internal memory or microSD);
 - what you did, what you expected and what happened, with a screenshot if possible (**HOME**, then **X**).
 
-Report it in this repository's [Issues](https://github.com/littlewild47/stv-android-releases/issues).
+Report it in this repository's [Issues](https://github.com/stv-os-android/stv-android-releases/issues).

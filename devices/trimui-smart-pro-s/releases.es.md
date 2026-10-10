@@ -110,15 +110,15 @@ primer arranque.
 
 ### 0.0.1-beta · 2026-10-10
 
-Primera versión pública. [Notas de la versión](https://github.com/littlewild47/stv-android-releases/releases/tag/trimui-smart-pro-s-v0.0.1-beta) (en inglés).
+Primera versión pública. [Notas de la versión](https://github.com/stv-os-android/stv-android-releases/releases/tag/trimui-smart-pro-s-v0.0.1-beta) (en inglés).
 
 | Archivo | Contenido | Tamaño |
 |---|---|---|
-| [stv-os-0.0.1-beta-trimui-smart-pro-s-internal-memory.zip](https://github.com/littlewild47/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/stv-os-0.0.1-beta-trimui-smart-pro-s-internal-memory.zip) | Instalación en la memoria interna | 974 MB |
-| [stv-os-0.0.1-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/littlewild47/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/stv-os-0.0.1-beta-trimui-smart-pro-s-microsd.img.xz) | Instalación en una tarjeta microSD | 845 MB |
-| [stv-os-0.0.1-beta-gpl-source.tar](https://github.com/littlewild47/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/stv-os-0.0.1-beta-gpl-source.tar) | Código fuente GPL: el kernel de esta versión, con sus parches y su configuración, y el resto del código GPL | 206 MB |
-| [NOTICE.txt](https://github.com/littlewild47/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/NOTICE.txt) | Componentes de terceros y licencias | |
-| [SHA256SUMS](https://github.com/littlewild47/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/littlewild47/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/SHA256SUMS.sig) | Sumas de verificación y su firma | |
+| [stv-os-0.0.1-beta-trimui-smart-pro-s-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/stv-os-0.0.1-beta-trimui-smart-pro-s-internal-memory.zip) | Instalación en la memoria interna | 974 MB |
+| [stv-os-0.0.1-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/stv-os-0.0.1-beta-trimui-smart-pro-s-microsd.img.xz) | Instalación en una tarjeta microSD | 845 MB |
+| [stv-os-0.0.1-beta-gpl-source.tar](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/stv-os-0.0.1-beta-gpl-source.tar) | Código fuente GPL: el kernel de esta versión, con sus parches y su configuración, y el resto del código GPL | 206 MB |
+| [NOTICE.txt](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/NOTICE.txt) | Componentes de terceros y licencias | |
+| [SHA256SUMS](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/SHA256SUMS.sig) | Sumas de verificación y su firma | |
 
 A partir de la próxima versión, cada una incluirá también paquetes de actualización, que se instalan desde
 la consola sin perder datos. El [manual](manual.es.md#actualizaciones) explica cómo.
