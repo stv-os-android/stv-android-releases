@@ -36,8 +36,10 @@ PPSSPP is also installed. What changes and how: [PPSSPP - STV](manual.md#ppsspp-
 - **Memory.** Android without the parts a handheld does not need, so games get more of the 1 GB of RAM.
 - **STV apps.** Android's interface is made for touch screens. STV OS replaces it with its own: control
   center (HOME), open apps (MENU), notices, lock screen, volume indicator and screenshots.
-- **Games menu.** Pegasus with the STV theme. *Manage Systems* adds systems, installs emulator cores, finds
-  box art and backs up saves, all from the console.
+- **Games menu.** Pegasus with the STV theme: a systems menu, recently played games, favorites, four game
+  views and a details screen, with the STV Neo theme as an alternative. *Manage Systems* adds systems,
+  installs emulator cores, finds box art and backs up saves, all from the console.
+- **Analog sticks.** Calibration from STV Settings, applied to every app and emulator.
 - **Other systems.** RetroArch for GBA, PS1, NES, SNES, Game Boy and more; Mupen64Plus FZ for Nintendo 64.
 - **Updates.** Signed packages installed from the console, with a way back to the previous version.
 
@@ -56,6 +58,8 @@ STV OS is built on the work of these projects:
 - **TrimUI**: the console, the bootloader of the internal memory installation and the controller service.
 - **PPSSPP**, **RetroArch** and the **libretro** cores, **Mupen64Plus FZ**, **Pegasus Frontend**,
   **Aurora Store** and **LeanKeyboard**.
+- **hazem-abdelghani** (Retro Mega Neo), **plaidman** (RetroMega Next) and **David Fumberger** (RetroMega):
+  the themes STV Neo is based on.
 - The **IBM Plex** fonts.
 
 The full list, with each license, is in `NOTICE.txt` and in **STV Settings › About this console › Licenses**.

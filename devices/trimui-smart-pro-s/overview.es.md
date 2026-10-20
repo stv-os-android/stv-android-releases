@@ -38,8 +38,10 @@ viene instalado. Qué cambia y cómo: [PPSSPP - STV](manual.es.md#ppsspp---stv) 
 - **Apps STV.** La interfaz de Android está hecha para pantallas táctiles. STV OS la reemplaza por la suya:
   centro de control (HOME), apps abiertas (MENU), avisos, pantalla de bloqueo, indicador de volumen y
   capturas de pantalla.
-- **Menú de juegos.** Pegasus con el tema STV. *Administrar Sistemas* agrega sistemas, instala cores de
-  emuladores, busca carátulas y respalda partidas, todo desde la consola.
+- **Menú de juegos.** Pegasus con el tema STV: un menú de sistemas, los últimos jugados, favoritos, cuatro
+  vistas de juegos y una ficha de cada juego, con el tema STV Neo como alternativa. *Administrar Sistemas*
+  agrega sistemas, instala cores de emuladores, busca carátulas y respalda partidas, todo desde la consola.
+- **Sticks analógicos.** Calibración desde Ajustes STV, que se aplica en todas las apps y emuladores.
 - **Otros sistemas.** RetroArch para GBA, PS1, NES, SNES, Game Boy y más; Mupen64Plus FZ para Nintendo 64.
 - **Actualizaciones.** Paquetes firmados que se instalan desde la consola, con vuelta a la versión anterior.
 
@@ -59,6 +61,8 @@ STV OS se apoya en el trabajo de estos proyectos:
   controles.
 - **PPSSPP**, **RetroArch** y los cores de **libretro**, **Mupen64Plus FZ**, **Pegasus Frontend**,
   **Aurora Store** y **LeanKeyboard**.
+- **hazem-abdelghani** (Retro Mega Neo), **plaidman** (RetroMega Next) y **David Fumberger** (RetroMega):
+  los temas en los que se basa STV Neo.
 - Las fuentes **IBM Plex**.
 
 La lista completa, con la licencia de cada uno, está en `NOTICE.txt` y en

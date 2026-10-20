@@ -8,6 +8,7 @@
 - [Instalar en la memoria interna](#instalar-en-la-memoria-interna)
 - [Instalar en una tarjeta microSD](#instalar-en-una-tarjeta-microsd)
 - [Después de instalar](#después-de-instalar)
+- [Actualizar desde una versión anterior](#actualizar-desde-una-versión-anterior)
 - [Versiones disponibles](#versiones-disponibles)
 - [Problemas conocidos](#problemas-conocidos)
 - [Verificar una descarga](#verificar-una-descarga)
@@ -106,7 +107,43 @@ primer arranque.
 
   El [manual](manual.es.md#los-juegos-y-la-carpeta-roms) explica cómo.
 
+## Actualizar desde una versión anterior
+
+Una consola que ya tiene STV OS (0.0.1-beta o posterior) se actualiza desde la consola, sin reinstalar:
+juegos, partidas, apps y ajustes se conservan. Un mismo paquete se instala sobre cualquier versión anterior,
+así que no hace falta pasar por las versiones intermedias.
+
+1. En la última versión de [Versiones disponibles](#versiones-disponibles), descargue el archivo de
+   **actualización** de su tipo de instalación: el que termina en `-internal-memory.zip` (memoria interna) o
+   el que termina en `-microsd.zip`. No lo renombre ni lo descomprima.
+2. Cópielo en la carpeta `STV/update`: en la instalación en memoria interna, en la tarjeta microSD o en el
+   almacenamiento interno; en la instalación en microSD, en el almacenamiento interno. Para copiarlo desde
+   una computadora, use **Ajustes STV › Transferencia USB**.
+3. Abra **Ajustes STV › Actualización del sistema**, elija el paquete y confirme. Antes de instalar se
+   muestran las notas de la versión nueva.
+4. La consola prepara la actualización en unos minutos; después, **Reiniciar e instalar**. El logo queda en
+   pantalla unos 3 minutos y la consola arranca con la versión nueva.
+
+Después, **Actualización del sistema** muestra la versión nueva y ofrece **Volver a** la anterior. Un paquete
+del otro tipo de instalación se rechaza antes de escribir nada. El [manual](manual.es.md#actualizaciones)
+tiene el detalle.
+
 ## Versiones disponibles
+
+### 0.0.2-beta · 2026-10-20
+
+Calibración de los sticks, un menú de sistemas nuevo y el tema STV Neo en el lanzador de juegos, Capcom CPS-3
+y MAME, y una corrección de la carga, que podía detenerse con el LED rojo parpadeando. [Notas de la versión](https://github.com/stv-os-android/stv-android-releases/releases/tag/trimui-smart-pro-s-v0.0.2-beta) (en inglés).
+
+| Archivo | Contenido | Tamaño |
+|---|---|---|
+| [stv-os-0.0.2-beta-trimui-smart-pro-s-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-trimui-smart-pro-s-internal-memory.zip) | Instalación en la memoria interna | 978 MB |
+| [stv-os-0.0.2-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-trimui-smart-pro-s-microsd.img.xz) | Instalación en una tarjeta microSD | 849 MB |
+| [STV-TSPS-update-f216-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/STV-TSPS-update-f216-internal-memory.zip) | Actualización de una instalación en memoria interna | 979 MB |
+| [STV-TSPS-update-f216-microsd.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/STV-TSPS-update-f216-microsd.zip) | Actualización de una instalación en microSD | 750 MB |
+| [stv-os-0.0.2-beta-gpl-source.tar](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-gpl-source.tar) | Código fuente GPL: el kernel de esta versión, con sus parches y su configuración, y el resto del código GPL | 206 MB |
+| [NOTICE.txt](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/NOTICE.txt) | Componentes de terceros y licencias | |
+| [SHA256SUMS](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/SHA256SUMS.sig) | Sumas de verificación y su firma | |
 
 ### 0.0.1-beta · 2026-10-10
 
@@ -120,12 +157,12 @@ Primera versión pública. [Notas de la versión](https://github.com/stv-os-andr
 | [NOTICE.txt](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/NOTICE.txt) | Componentes de terceros y licencias | |
 | [SHA256SUMS](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.1-beta/SHA256SUMS.sig) | Sumas de verificación y su firma | |
 
-A partir de la próxima versión, cada una incluirá también paquetes de actualización, que se instalan desde
-la consola sin perder datos. El [manual](manual.es.md#actualizaciones) explica cómo.
-
 ## Problemas conocidos
 
 - Se probó en una sola consola; otros lotes de fabricación podrían comportarse distinto.
+- La actualización desde la 0.0.1-beta se probó en la instalación en memoria interna. El paquete de microSD
+  pasó las mismas comprobaciones en una computadora (firma, tipo de instalación, versiones aceptadas y
+  particiones), pero todavía no se instaló en una consola que arranca desde una tarjeta microSD.
 - Las tarjetas microSD en exFAT no se probaron con la instalación en memoria interna: use FAT32.
 - Volver al firmware de fábrica con el archivo oficial de TrimUI no se probó de principio a fin con STV OS
   instalado.
@@ -146,7 +183,7 @@ shasum -a 256 -c SHA256SUMS --ignore-missing
 En Windows (PowerShell), calcule la suma y compárela con la línea del archivo en `SHA256SUMS`:
 
 ```powershell
-Get-FileHash .\stv-os-0.0.1-beta-trimui-smart-pro-s-internal-memory.zip -Algorithm SHA256
+Get-FileHash .\stv-os-0.0.2-beta-trimui-smart-pro-s-internal-memory.zip -Algorithm SHA256
 ```
 
 Para verificar la firma, use OpenSSL 3:

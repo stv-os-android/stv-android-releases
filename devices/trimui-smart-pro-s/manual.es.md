@@ -46,30 +46,49 @@ Dentro de cada emulador:
 
 ## La pantalla de inicio
 
-La pantalla de inicio es **Pegasus**, un lanzador de juegos con el tema STV. Muestra la biblioteca un
-sistema a la vez, con la carátula de cada juego, y abre cada juego con su emulador.
+La pantalla de inicio es **Pegasus**, un lanzador de juegos con el tema STV. Abre en el **menú de sistemas**:
+un sistema por pantalla, con su logo, fabricante, años y cantidad de juegos. Además de los sistemas de juegos
+hay tres colecciones, *Últimos jugados*, *Favoritos* (cada una aparece cuando tiene algo) y *Todos los
+juegos*; la colección **Android**, con las apps instaladas; y, al final, *Administrar Sistemas* y
+*Ajustes STV*.
 
-![Pantalla de inicio](images/es/home.png)
+![Menú de sistemas](images/es/home.png)
 
-| Botón | Qué hace |
-|---|---|
-| **L1 / R1** | Sistema anterior / siguiente |
-| **Cruz direccional** | Recorre los juegos |
-| **A** | Abre el juego con su emulador predeterminado |
-| **X** | Opciones del juego (más abajo) |
-| **Y** | Buscar por nombre |
-| **START** | Actualiza la biblioteca (después de agregar o borrar juegos) |
-| **SELECT** | Menú de Pegasus (sus ajustes, ayuda, cerrar) |
+| Botón | En el menú de sistemas | En una lista de juegos |
+|---|---|---|
+| **Izquierda / derecha** | Sistema anterior / siguiente | Recorre los juegos |
+| **L1 / R1** | Sistema anterior / siguiente | Sistema anterior / siguiente |
+| **A** | Entra al sistema | Abre el juego con su emulador predeterminado |
+| **B** | | Vuelve al menú de sistemas |
+| **X** | | Opciones del juego (más abajo) |
+| **Y** | | Buscar por nombre |
+| **START** | Actualiza la biblioteca (después de agregar o borrar juegos) | Igual |
+| **SELECT** | Menú de Pegasus (sus ajustes, entre ellos el tema) | Igual |
 
-**Opciones del juego (X):** elegir el emulador (para PSP, *PPSSPP - STV*, el predeterminado, o el *PPSSPP*
-oficial), cambiar la vista del sistema entre grilla y lista, o eliminar el juego y su arte de la consola.
+Los sistemas de juegos abren en la vista **galería**: las carátulas en fila, con la elegida ampliada. Al volver
+de un juego, la lista queda en ese mismo juego.
+
+![Una lista de juegos en la vista galería](images/es/games.png)
+
+**Opciones del juego (X):** marcar el juego como favorito, abrir su ficha completa, elegir el emulador (para
+PSP, *PPSSPP - STV*, el predeterminado, o el *PPSSPP* oficial), elegir la vista del sistema (grilla, lista,
+lateral o galería; se recuerda para cada sistema) o eliminar el juego y su arte de la consola.
 
 ![Opciones del juego](images/es/game-options.png)
 
-El sistema **Android** muestra las apps instaladas: *Administrar Sistemas*, *Ajustes STV*, los emuladores,
+La **ficha completa** muestra el arte en grande y los datos del juego; izquierda y derecha cambian entre
+carátula, captura y pantalla de título.
+
+![Ficha completa](images/es/game-details.png)
+
+La colección **Android** muestra las apps instaladas: *Administrar Sistemas*, *Ajustes STV*, los emuladores,
 Aurora Store y cualquier app que se instale.
 
 ![Apps de Android](images/es/android-apps.png)
+
+**Temas:** *STV Claro* y *STV Oscuro* siguen el tema claro u oscuro elegido en Ajustes STV. *STV Neo* es una
+versión del tema Retro Mega Neo de hazem-abdelghani, adaptada a esta consola (CC BY-NC-SA 4.0). Se cambia en
+**SELECT › Ajustes › Tema**.
 
 ## Centro de control (HOME)
 
@@ -148,6 +167,7 @@ izquierda y derecha ajustan.
 | **Wi-Fi** | La pantalla de Wi-Fi de Android |
 | **LEDs de los sticks** | Color y brillo de cada aro, con un color RGB a medida |
 | **Puntero (modo mouse)** | Encendido o apagado, y la velocidad del cursor |
+| **Calibración de los sticks** | Mide el centro y el recorrido de los dos sticks y aplica el resultado en todas las apps y emuladores; zona muerta de cada stick y vuelta a la calibración automática |
 | **Switch FN** | Qué hace el switch FN al pasarlo a ON |
 | **Seguridad** | La [pantalla de bloqueo](#pantalla-de-bloqueo) |
 | **Desarrollo** | Depuración por USB (adb) y acceso root. Apagados en una instalación limpia |
@@ -161,9 +181,10 @@ izquierda y derecha ajustan.
 
 <table>
 <tr><td><img src="images/es/settings-display.png" alt="Pantalla"></td><td><img src="images/es/settings-sound.png" alt="Sonido y vibración"></td></tr>
-<tr><td><img src="images/es/settings-leds.png" alt="LEDs de los sticks"></td><td><img src="images/es/settings-fn-switch.png" alt="Switch FN"></td></tr>
-<tr><td><img src="images/es/settings-developer.png" alt="Desarrollo"></td><td><img src="images/es/settings-storage.png" alt="Almacenamiento"></td></tr>
-<tr><td><img src="images/es/settings-date-time.png" alt="Fecha y hora"></td><td><img src="images/es/settings-about.png" alt="Acerca de la consola"></td></tr>
+<tr><td><img src="images/es/settings-leds.png" alt="LEDs de los sticks"></td><td><img src="images/es/settings-sticks.png" alt="Calibración de los sticks"></td></tr>
+<tr><td><img src="images/es/settings-fn-switch.png" alt="Switch FN"></td><td><img src="images/es/settings-developer.png" alt="Desarrollo"></td></tr>
+<tr><td><img src="images/es/settings-storage.png" alt="Almacenamiento"></td><td><img src="images/es/settings-date-time.png" alt="Fecha y hora"></td></tr>
+<tr><td colspan="2"><img src="images/es/settings-about.png" alt="Acerca de la consola"></td></tr>
 </table>
 
 ## Administrar Sistemas
@@ -199,7 +220,8 @@ STV OS instala y configura los emuladores. Cada sistema se abre con el de esta t
 | PlayStation | RetroArch (PCSX-ReARMed) | Funciona sin archivo de BIOS en la mayoría de los juegos |
 | Game Boy Advance | RetroArch (mGBA) | |
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
-| Neo Geo, arcade, CPS-1, CPS-2 | RetroArch (FinalBurn Neo) | **No viene incluido** (su licencia solo permite el uso no comercial). La primera vez que se abre uno de estos juegos, *Administrar Sistemas* ofrece *Instalar core* (necesita Wi-Fi, unos 70 MB) |
+| Neo Geo, arcade, CPS-1, CPS-2, CPS-3 | RetroArch (FinalBurn Neo) | **No viene incluido** (su licencia solo permite el uso no comercial). La primera vez que se abre uno de estos juegos, *Administrar Sistemas* ofrece *Instalar core* (necesita Wi-Fi, unos 70 MB) |
+| MAME | RetroArch (MAME 2003-Plus) | **No viene incluido** (su licencia solo permite el uso no comercial). Usa los romsets de MAME 0.78; MAME 2010 y MAME 2000 quedan como alternativas para otros romsets. Se instala igual que FinalBurn Neo (necesita Wi-Fi, unos 40 MB) |
 | Otros | RetroArch | Se agregan desde el catálogo de *Administrar Sistemas* |
 
 ## PPSSPP - STV
@@ -272,19 +294,24 @@ guardar, y la consola lo avisa. No retire la tarjeta con un juego abierto.
 
 ## Actualizaciones
 
-STV OS se actualiza desde la consola, sin reinstalar. Cada versión llega como un paquete
-firmado que conserva juegos, partidas, apps y ajustes, y la versión anterior queda disponible para volver.
+STV OS se actualiza desde la consola, sin reinstalar. Cada versión publica un paquete de actualización por
+tipo de instalación, firmado, que se instala sobre cualquier versión anterior y conserva juegos, partidas,
+apps y ajustes. La versión anterior queda disponible para volver.
 
-1. Copie el paquete de actualización (`STV-TSPS-update-<compilación>.zip`) en la carpeta `STV/update` del
-   almacenamiento interno. También sirve la carpeta `Download` y, en la instalación en memoria interna,
-   `STV/update` en la tarjeta.
-2. Abra **Ajustes STV › Actualización del sistema**. Encuentra el paquete, muestra sus notas y pide confirmar.
-3. La consola prepara la actualización en unos 2 minutos mientras se puede seguir usando; después reinicia y
-   la instala en 3 a 4 minutos. No la apague.
-4. La consola reinicia con la versión nueva. **Volver a <compilación>** regresa a la anterior.
+1. Descargue el paquete de su instalación desde [Versiones disponibles](releases.es.md#versiones-disponibles):
+   el que termina en `-internal-memory.zip` (memoria interna) o el que termina en `-microsd.zip`. No lo
+   renombre ni lo descomprima.
+2. Cópielo en la carpeta `STV/update` del almacenamiento interno. También sirve la carpeta `Download` y, en la
+   instalación en memoria interna, `STV/update` en la tarjeta.
+3. Abra **Ajustes STV › Actualización del sistema**. Encuentra el paquete, muestra sus notas y pide confirmar.
+4. La consola prepara la actualización en unos minutos mientras se puede seguir usando; después reinicia y la
+   instala. El logo queda en pantalla unos 3 minutos. No la apague.
+5. La consola reinicia con la versión nueva. **Volver a <compilación>** regresa a la anterior.
 
 La actualización necesita un 40 % de batería o el cargador conectado. Un paquete hecho para el otro tipo de
 instalación se rechaza antes de escribir nada, y solo se aceptan paquetes firmados.
+
+![Actualización del sistema después de instalar una versión nueva](images/es/settings-update.png)
 
 ## Solución de problemas
 
@@ -304,6 +331,10 @@ error del sistema de archivos (por ejemplo, después de un corte de energía). N
 la consola desde **Ajustes STV › Sistema › Apagar** y vuelva a encenderla. Al arrancar, revisa y repara el
 almacenamiento.
 
+**¿Un stick se mueve solo o no llega al máximo?** Abra **Ajustes STV › Calibración de los sticks** y
+elija *Calibrar*: suelte los dos sticks y, cuando se lo pida, gírelos despacio por todo el borde. Si el
+movimiento sigue apareciendo sin tocar el stick, aumente su *zona muerta*.
+
 **¿Olvidó el PIN?** No se puede recuperar. Instalar STV OS de nuevo lo quita, junto con los datos internos de
 la consola; en la instalación en memoria interna, los juegos y las partidas de la tarjeta se conservan.
 
@@ -311,7 +342,7 @@ la consola; en la instalación en memoria interna, los juegos y las partidas de 
 su `metadata.pegasus.txt` (lo crea *Administrar Sistemas*) con la extensión del juego y que el nombre no
 tenga más de tres puntos. Después pulse **START** en la pantalla de inicio.
 
-**¿Un juego de Neo Geo o de arcade abre la pantalla del core?** FinalBurn Neo no viene incluido. Pulse **A**
+**¿Un juego de Neo Geo, arcade o MAME abre la pantalla del core?** FinalBurn Neo y MAME 2003-Plus no vienen incluidos. Pulse **A**
 en *Instalar core* (con Wi-Fi) y después **B** para volver; el juego se abre.
 
 ## Reportar un problema
@@ -319,7 +350,7 @@ en *Instalar core* (con Wi-Fi) y después **B** para volver; el juego se abre.
 Incluya:
 
 - la versión y la compilación que muestra **Ajustes STV › Acerca de la consola** (por ejemplo,
-  *0.0.1-beta · compilación f195*);
+  *0.0.2-beta · compilación f216*);
 - el tipo de instalación (memoria interna o microSD);
 - qué hizo, qué esperaba y qué pasó, con una captura de pantalla si es posible (**HOME** y después **X**).
 

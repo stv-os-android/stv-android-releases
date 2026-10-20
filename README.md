@@ -11,7 +11,7 @@ Custom firmware based on Android 13 for handheld consoles, optimized for PSP emu
 
 | Device | Status | Latest version |
 |---|---|---|
-| [**TrimUI Smart Pro S**](devices/trimui-smart-pro-s/README.md) | Beta | [0.0.1-beta](devices/trimui-smart-pro-s/releases.md#available-versions) |
+| [**TrimUI Smart Pro S**](devices/trimui-smart-pro-s/README.md) | Beta | [0.0.2-beta](devices/trimui-smart-pro-s/releases.md#available-versions) |
 
 ## Support the project
 

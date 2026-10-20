@@ -11,7 +11,7 @@ Custom firmware basado en Android 13 para consolas portátiles, optimizado para 
 
 | Dispositivo | Estado | Última versión |
 |---|---|---|
-| [**TrimUI Smart Pro S**](devices/trimui-smart-pro-s/README.es.md) | Beta | [0.0.1-beta](devices/trimui-smart-pro-s/releases.es.md#versiones-disponibles) |
+| [**TrimUI Smart Pro S**](devices/trimui-smart-pro-s/README.es.md) | Beta | [0.0.2-beta](devices/trimui-smart-pro-s/releases.es.md#versiones-disponibles) |
 
 ## Apoyar el proyecto
 

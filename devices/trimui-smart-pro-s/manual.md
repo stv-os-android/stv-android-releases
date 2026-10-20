@@ -46,30 +46,49 @@ Inside each emulator:
 
 ## The home screen
 
-The home screen is **Pegasus**, a game launcher with the STV theme. It shows the library one system at a
-time, with the box art of each game, and opens each game with its emulator.
+The home screen is **Pegasus**, a game launcher with the STV theme. It opens on the **systems menu**: one
+system per screen, with its logo, maker, years and number of games. Besides the game systems there are
+three collections, *Recently played*, *Favorites* (each one appears once it has something in it) and
+*All games*; the **Android** collection with the installed apps; and, at the end, *Manage Systems* and
+*STV Settings*.
 
-![Home screen](images/en/home.png)
+![Systems menu](images/en/home.png)
 
-| Button | What it does |
-|---|---|
-| **L1 / R1** | Previous / next system |
-| **D-pad** | Moves between games |
-| **A** | Opens the game with its default emulator |
-| **X** | Game options (below) |
-| **Y** | Search by name |
-| **START** | Refreshes the library (after adding or removing games) |
-| **SELECT** | Pegasus menu (its own settings, help, quit) |
+| Button | In the systems menu | In a game list |
+|---|---|---|
+| **Left / right** | Previous / next system | Move between games |
+| **L1 / R1** | Previous / next system | Previous / next system |
+| **A** | Opens the system | Opens the game with its default emulator |
+| **B** | | Back to the systems menu |
+| **X** | | Game options (below) |
+| **Y** | | Search by name |
+| **START** | Refreshes the library (after adding or removing games) | Same |
+| **SELECT** | Pegasus menu (its settings, including the theme) | Same |
 
-**Game options (X):** choose the emulator (for PSP, *PPSSPP - STV*, the default, or the official *PPSSPP*),
-switch the system view between grid and list, or delete the game and its artwork from the console.
+Game systems open in the **gallery** view: the box art in a row, with the selected one enlarged. Coming back
+from a game puts you on that same game.
+
+![A game list in the gallery view](images/en/games.png)
+
+**Game options (X):** mark the game as a favorite, open its full details, choose the emulator (for PSP,
+*PPSSPP - STV*, the default, or the official *PPSSPP*), choose the system's view (grid, list, sidebar or
+gallery; it is remembered for each system), or delete the game and its artwork from the console.
 
 ![Game options](images/en/game-options.png)
 
-The **Android** system lists the installed apps: *Manage Systems*, *STV Settings*, the emulators, Aurora Store
-and any app you install.
+**Full details** shows the large artwork and the game's data; left and right switch between cover,
+screenshot and title screen.
+
+![Full details](images/en/game-details.png)
+
+The **Android** collection lists the installed apps: *Manage Systems*, *STV Settings*, the emulators,
+Aurora Store and any app you install.
 
 ![Android apps](images/en/android-apps.png)
+
+**Themes:** *STV Claro* and *STV Oscuro* follow the light or dark theme chosen in STV Settings. *STV Neo* is a
+version of the Retro Mega Neo theme by hazem-abdelghani, adapted for this console (CC BY-NC-SA 4.0). Change it
+in **SELECT › Settings › Theme**.
 
 ## Control center (HOME)
 
@@ -147,6 +166,7 @@ remain available under *System*. **A** chooses, **B** goes back, left and right 
 | **Wi-Fi** | Android's Wi-Fi screen |
 | **Stick LEDs** | Color and brightness of each ring, with a custom RGB color |
 | **Pointer (mouse mode)** | On or off, and the cursor speed |
+| **Stick calibration** | Measures the center and travel of both sticks and applies the result in every app and emulator; a dead zone for each stick and a way back to the automatic calibration |
 | **FN switch** | What the FN switch does when set to ON |
 | **Security** | The [lock screen](#lock-screen) |
 | **Developer** | USB debugging (adb) and root access. Off on a clean install |
@@ -160,9 +180,10 @@ remain available under *System*. **A** chooses, **B** goes back, left and right 
 
 <table>
 <tr><td><img src="images/en/settings-display.png" alt="Display"></td><td><img src="images/en/settings-sound.png" alt="Sound and vibration"></td></tr>
-<tr><td><img src="images/en/settings-leds.png" alt="Stick LEDs"></td><td><img src="images/en/settings-fn-switch.png" alt="FN switch"></td></tr>
-<tr><td><img src="images/en/settings-developer.png" alt="Developer"></td><td><img src="images/en/settings-storage.png" alt="Storage"></td></tr>
-<tr><td><img src="images/en/settings-date-time.png" alt="Date and time"></td><td><img src="images/en/settings-about.png" alt="About this console"></td></tr>
+<tr><td><img src="images/en/settings-leds.png" alt="Stick LEDs"></td><td><img src="images/en/settings-sticks.png" alt="Stick calibration"></td></tr>
+<tr><td><img src="images/en/settings-fn-switch.png" alt="FN switch"></td><td><img src="images/en/settings-developer.png" alt="Developer"></td></tr>
+<tr><td><img src="images/en/settings-storage.png" alt="Storage"></td><td><img src="images/en/settings-date-time.png" alt="Date and time"></td></tr>
+<tr><td colspan="2"><img src="images/en/settings-about.png" alt="About this console"></td></tr>
 </table>
 
 ## Manage Systems
@@ -197,7 +218,8 @@ STV OS installs and configures the emulators. Each system opens with the one in 
 | PlayStation | RetroArch (PCSX-ReARMed) | Works without a BIOS file for most games |
 | Game Boy Advance | RetroArch (mGBA) | |
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
-| Neo Geo, arcade, CPS-1, CPS-2 | RetroArch (FinalBurn Neo) | **Not included** (its license allows only non-commercial use). The first time you open one of these games, *Manage Systems* offers *Install core* (needs Wi-Fi, about 70 MB) |
+| Neo Geo, arcade, CPS-1, CPS-2, CPS-3 | RetroArch (FinalBurn Neo) | **Not included** (its license allows only non-commercial use). The first time you open one of these games, *Manage Systems* offers *Install core* (needs Wi-Fi, about 70 MB) |
+| MAME | RetroArch (MAME 2003-Plus) | **Not included** (its license allows only non-commercial use). Uses MAME 0.78 romsets; MAME 2010 and MAME 2000 are available as alternatives for other romsets. Installed the same way as FinalBurn Neo (needs Wi-Fi, about 40 MB) |
 | Others | RetroArch | Added from the catalog in *Manage Systems* |
 
 ## PPSSPP - STV
@@ -265,20 +287,23 @@ the console warns about it. Do not remove the card while a game is open.
 
 ## Updates
 
-STV OS updates from the console, without reinstalling. Each version comes as a
-signed package that keeps games, saves, apps and settings, and the previous version stays available to go
-back to.
+STV OS updates from the console, without reinstalling. Each version publishes one update package per
+installation type, signed, that installs over any earlier version and keeps games, saves, apps and settings.
+The previous version stays available to go back to.
 
-1. Copy the update package (`STV-TSPS-update-<build>.zip`) to the `STV/update` folder of the internal storage.
-   The `Download` folder also works and, in the internal memory installation, so does `STV/update` on the
-   card.
-2. Open **STV Settings › System update**. It finds the package, shows its notes and asks to confirm.
-3. The console prepares the update in about 2 minutes while you keep using it, then restarts and installs it
-   in 3 to 4 minutes. Do not turn it off.
-4. The console restarts with the new version. **Go back to <build>** returns to the previous one.
+1. Download the package for your installation from [Available versions](releases.md#available-versions): the
+   one ending in `-internal-memory.zip` or the one ending in `-microsd.zip`. Do not rename or unzip it.
+2. Copy it to the `STV/update` folder of the internal storage. The `Download` folder also works and, in the
+   internal memory installation, so does `STV/update` on the card.
+3. Open **STV Settings › System update**. It finds the package, shows its notes and asks to confirm.
+4. The console prepares the update in a few minutes while you keep using it, then restarts and installs it.
+   The logo stays on screen for about 3 minutes. Do not turn it off.
+5. The console restarts with the new version. **Go back to <build>** returns to the previous one.
 
 The update needs 40% battery or the charger connected. A package made for the other installation type is
 rejected before anything is written, and only signed packages are accepted.
+
+![System update after installing a new version](images/en/settings-update.png)
 
 ## Troubleshooting
 
@@ -296,6 +321,10 @@ rejected before anything is written, and only signed packages are accepted.
 example, a power cut). Nothing is being saved. Turn the console off from **STV Settings › System › Power
 off** and on again. It checks and repairs the storage while starting.
 
+**Does a stick move on its own or not reach full range?** Open **STV Settings › Stick calibration** and
+choose *Calibrate*: release both sticks and, when asked, rotate them slowly along the edge. If movement still
+shows up without touching the stick, increase its *dead zone*.
+
 **Forgot the PIN?** It cannot be recovered. Installing STV OS again removes it, along with the console's
 internal data; in the internal memory installation, games and saves on the card stay.
 
@@ -303,7 +332,7 @@ internal data; in the internal memory installation, games and saves on the card 
 `metadata.pegasus.txt` (created by *Manage Systems*) with the game's extension listed, and that the name has
 no more than three dots. Then press **START** on the home screen.
 
-**Neo Geo or arcade game opens the core screen?** FinalBurn Neo is not included. Press **A** on
+**Neo Geo, arcade or MAME game opens the core screen?** FinalBurn Neo and MAME 2003-Plus are not included. Press **A** on
 *Install core* (needs Wi-Fi), then **B** to go back; the game opens.
 
 ## Reporting a problem
@@ -311,7 +340,7 @@ no more than three dots. Then press **START** on the home screen.
 Include:
 
 - the version and build shown in **STV Settings › About this console** (for example,
-  *0.0.1-beta · build f195*);
+  *0.0.2-beta · build f216*);
 - the installation type (internal memory or microSD);
 - what you did, what you expected and what happened, with a screenshot if possible (**HOME**, then **X**).
 

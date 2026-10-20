@@ -6,7 +6,7 @@
 
 ![The STV OS home screen on the TrimUI Smart Pro S](images/en/home.png)
 
-**Latest version:** 0.0.1-beta (2026-10-10)
+**Latest version:** 0.0.2-beta (2026-10-20)
 
 **What STV OS is**, what it changes in the console and the measured PSP results: [Overview](overview.md).
 
@@ -31,6 +31,11 @@ There is one file per installation type in [Available versions](releases.md#avai
 
 Follow [After installing](releases.md#after-installing): language, time zone, Wi-Fi and where to copy your
 games.
+
+## How do I update an earlier version?
+
+From the console, with the update package of the latest version, keeping games, saves and settings:
+[Update from an earlier version](releases.md#update-from-an-earlier-version).
 
 ## Manual
 
