@@ -43,8 +43,10 @@ console's charger.
 > completely first (for example, with *SD Card Formatter* and its *Overwrite format* option).
 
 > [!NOTE]
-> Cards of 64 GB or more usually come formatted as exFAT. Reformat them as FAT32: on macOS, with Disk
-> Utility (*MS-DOS (FAT)*); on Windows, cards over 32 GB need a third-party FAT32 formatting tool.
+> For the installation, use a FAT32 card: installing from an exFAT card has not been tested. Cards of 64 GB or
+> more usually come formatted as exFAT: reformat them as FAT32 (on macOS, with Disk Utility, *MS-DOS (FAT)*; on
+> Windows, cards over 32 GB need a third-party FAT32 formatting tool), or use a smaller card just for the
+> installation. After installing, the games card can be FAT32 or exFAT.
 
 1. Download `stv-os-<version>-trimui-smart-pro-s-internal-memory.zip` from
    [Available versions](#available-versions) and unzip it. It contains `trimui_tg5050.awimg` (about
@@ -99,7 +101,7 @@ start.
   download emulator cores and box art.
 - USB debugging and root access are off. Turn them on in **STV Settings › Developer** only if you need them.
 - Copy your games to `Roms/<system>/` (for example, `Roms/psp/`):
-  - **Internal memory installation:** at the root of the microSD card, formatted as FAT32.
+  - **Internal memory installation:** at the root of the microSD card (FAT32 or exFAT).
   - **microSD installation:** in the console's internal storage.
 
   The [manual](manual.md#games-and-the-roms-folder) explains how.
@@ -157,7 +159,8 @@ First public release. [Release notes](https://github.com/stv-os-android/stv-andr
 ## Known issues
 
 - Tested on one console; other production batches may behave differently.
-- microSD cards formatted as exFAT have not been tested with the internal memory installation: use FAT32.
+- Installing on the internal memory from an exFAT card has not been tested: put the installation file on a
+  FAT32 card. As the games card, exFAT works.
 - Going back to the factory firmware with TrimUI's official file has not been tested end to end with STV OS
   installed.
 - The system is signed with Android's public test keys and SELinux runs in permissive mode. Install apps

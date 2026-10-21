@@ -261,8 +261,8 @@ Games go in a `Roms` folder, with one lowercase subfolder per system: `Roms/psp`
   card reader or over USB (*USB transfer* shows the card as a second drive). You can insert and remove the
   card with the console on; the library updates by itself.
 
-  The card must be formatted as **FAT32**, the format tested with STV OS. exFAT, the usual format of cards of
-  64 GB or more, has not been tested: reformat those as FAT32 ([how](releases.md#install-on-the-internal-memory)).
+  The card can be formatted as **FAT32** or **exFAT** (the usual format of cards of 64 GB or more): both were
+  tested for games, saves and updates.
 - **microSD installation:** `Roms` is in the console's internal storage, the drive a computer sees with
   **STV Settings › USB transfer**. Copy the games that way.
 
@@ -332,8 +332,8 @@ shows up without touching the stick, increase its *dead zone*.
 internal data; in the internal memory installation, games and saves on the card stay.
 
 **Console does not see the microSD card or its games (internal memory installation)?** Check that the card is
-formatted as FAT32: exFAT has not been tested. Reformatting erases the card, so first copy everything on it
-(games, saves and backups) to a computer.
+formatted as FAT32 or exFAT; other formats, such as NTFS, are not read. Reformatting erases the card, so first
+copy everything on it (games, saves and backups) to a computer.
 
 **Game not showing up?** Check that it is directly in `Roms/<system>/`, that the system folder has its
 `metadata.pegasus.txt` (created by *Manage Systems*) with the game's extension listed, and that the name has

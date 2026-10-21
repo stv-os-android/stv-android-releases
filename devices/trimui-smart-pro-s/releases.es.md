@@ -43,9 +43,10 @@ cargador de la consola.
 > completo antes (por ejemplo, con *SD Card Formatter* y su opción *Overwrite format*).
 
 > [!NOTE]
-> Las tarjetas de 64 GB o más suelen venir con formato exFAT. Formatéelas en FAT32: en macOS, con Utilidad
-> de Discos (*MS-DOS (FAT)*); en Windows, una tarjeta de más de 32 GB necesita una herramienta de formato
-> FAT32 de terceros.
+> Para instalar, use una tarjeta FAT32: instalar desde una tarjeta exFAT no se probó. Las tarjetas de 64 GB o
+> más suelen venir con formato exFAT: formatéelas en FAT32 (en macOS, con Utilidad de Discos, *MS-DOS (FAT)*;
+> en Windows, una tarjeta de más de 32 GB necesita una herramienta de formato FAT32 de terceros) o use una
+> tarjeta más chica solo para instalar. Después de instalar, la tarjeta de juegos puede ser FAT32 o exFAT.
 
 1. Descargue `stv-os-<versión>-trimui-smart-pro-s-internal-memory.zip` de
    [Versiones disponibles](#versiones-disponibles) y descomprímalo. Contiene `trimui_tg5050.awimg` (unos
@@ -102,7 +103,7 @@ primer arranque.
 - La depuración por USB y el acceso root vienen apagados. Enciéndalos en **Ajustes STV › Desarrollo** solo
   si los necesita.
 - Copie sus juegos en `Roms/<sistema>/` (por ejemplo, `Roms/psp/`):
-  - **Instalación en memoria interna:** en la raíz de la tarjeta microSD, con formato FAT32.
+  - **Instalación en memoria interna:** en la raíz de la tarjeta microSD (FAT32 o exFAT).
   - **Instalación en microSD:** en el almacenamiento interno de la consola.
 
   El [manual](manual.es.md#los-juegos-y-la-carpeta-roms) explica cómo.
@@ -160,7 +161,8 @@ Primera versión pública. [Notas de la versión](https://github.com/stv-os-andr
 ## Problemas conocidos
 
 - Se probó en una sola consola; otros lotes de fabricación podrían comportarse distinto.
-- Las tarjetas microSD en exFAT no se probaron con la instalación en memoria interna: use FAT32.
+- Instalar en la memoria interna desde una tarjeta exFAT no se probó: ponga el archivo de instalación en una
+  tarjeta FAT32. Como tarjeta de juegos, exFAT funciona.
 - Volver al firmware de fábrica con el archivo oficial de TrimUI no se probó de principio a fin con STV OS
   instalado.
 - El sistema está firmado con las claves de prueba públicas de Android y SELinux funciona en modo permisivo.
