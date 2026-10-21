@@ -265,6 +265,9 @@ Los juegos van en una carpeta `Roms`, con una subcarpeta por sistema en minúscu
 - **Instalación en memoria interna:** `Roms` está en la raíz de la tarjeta microSD (FAT32). Los juegos se
   copian con un lector de tarjetas o por USB (*Transferencia USB* muestra la tarjeta como una segunda unidad).
   La tarjeta se puede insertar y retirar con la consola encendida; la biblioteca se actualiza sola.
+
+  La tarjeta tiene que tener formato **FAT32**, el que se probó con STV OS. exFAT, el formato habitual de las
+  tarjetas de 64 GB o más, no se probó: formatéelas en FAT32 ([cómo](releases.es.md#instalar-en-la-memoria-interna)).
 - **Instalación en microSD:** `Roms` está en el almacenamiento interno de la consola, la unidad que ve la
   computadora con **Ajustes STV › Transferencia USB**. Los juegos se copian por ahí.
 
@@ -337,6 +340,10 @@ movimiento sigue apareciendo sin tocar el stick, aumente su *zona muerta*.
 
 **¿Olvidó el PIN?** No se puede recuperar. Instalar STV OS de nuevo lo quita, junto con los datos internos de
 la consola; en la instalación en memoria interna, los juegos y las partidas de la tarjeta se conservan.
+
+**¿La consola no ve la tarjeta microSD o sus juegos (instalación en memoria interna)?** Revise que la tarjeta
+tenga formato FAT32: exFAT no se probó. Formatearla la borra, así que antes copie todo su contenido
+(juegos, partidas y respaldos) a una computadora.
 
 **¿Un juego no aparece?** Revise que esté directamente en `Roms/<sistema>/`, que la carpeta del sistema tenga
 su `metadata.pegasus.txt` (lo crea *Administrar Sistemas*) con la extensión del juego y que el nombre no

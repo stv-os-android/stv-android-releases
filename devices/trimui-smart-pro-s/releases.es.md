@@ -102,7 +102,7 @@ primer arranque.
 - La depuración por USB y el acceso root vienen apagados. Enciéndalos en **Ajustes STV › Desarrollo** solo
   si los necesita.
 - Copie sus juegos en `Roms/<sistema>/` (por ejemplo, `Roms/psp/`):
-  - **Instalación en memoria interna:** en la raíz de la tarjeta microSD.
+  - **Instalación en memoria interna:** en la raíz de la tarjeta microSD, con formato FAT32.
   - **Instalación en microSD:** en el almacenamiento interno de la consola.
 
   El [manual](manual.es.md#los-juegos-y-la-carpeta-roms) explica cómo.

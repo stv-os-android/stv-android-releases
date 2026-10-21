@@ -99,7 +99,7 @@ start.
   download emulator cores and box art.
 - USB debugging and root access are off. Turn them on in **STV Settings › Developer** only if you need them.
 - Copy your games to `Roms/<system>/` (for example, `Roms/psp/`):
-  - **Internal memory installation:** at the root of the microSD card.
+  - **Internal memory installation:** at the root of the microSD card, formatted as FAT32.
   - **microSD installation:** in the console's internal storage.
 
   The [manual](manual.md#games-and-the-roms-folder) explains how.

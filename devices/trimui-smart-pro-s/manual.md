@@ -260,6 +260,9 @@ Games go in a `Roms` folder, with one lowercase subfolder per system: `Roms/psp`
 - **Internal memory installation:** `Roms` is at the root of the microSD card (FAT32). Copy the games with a
   card reader or over USB (*USB transfer* shows the card as a second drive). You can insert and remove the
   card with the console on; the library updates by itself.
+
+  The card must be formatted as **FAT32**, the format tested with STV OS. exFAT, the usual format of cards of
+  64 GB or more, has not been tested: reformat those as FAT32 ([how](releases.md#install-on-the-internal-memory)).
 - **microSD installation:** `Roms` is in the console's internal storage, the drive a computer sees with
   **STV Settings › USB transfer**. Copy the games that way.
 
@@ -327,6 +330,10 @@ shows up without touching the stick, increase its *dead zone*.
 
 **Forgot the PIN?** It cannot be recovered. Installing STV OS again removes it, along with the console's
 internal data; in the internal memory installation, games and saves on the card stay.
+
+**Console does not see the microSD card or its games (internal memory installation)?** Check that the card is
+formatted as FAT32: exFAT has not been tested. Reformatting erases the card, so first copy everything on it
+(games, saves and backups) to a computer.
 
 **Game not showing up?** Check that it is directly in `Roms/<system>/`, that the system folder has its
 `metadata.pegasus.txt` (created by *Manage Systems*) with the game's extension listed, and that the name has
