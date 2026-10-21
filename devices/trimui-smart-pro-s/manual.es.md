@@ -350,7 +350,7 @@ en *Instalar core* (con Wi-Fi) y después **B** para volver; el juego se abre.
 Incluya:
 
 - la versión y la compilación que muestra **Ajustes STV › Acerca de la consola** (por ejemplo,
-  *0.0.2-beta · compilación f216*);
+  *0.0.2-beta · compilación f217*);
 - el tipo de instalación (memoria interna o microSD);
 - qué hizo, qué esperaba y qué pasó, con una captura de pantalla si es posible (**HOME** y después **X**).
 

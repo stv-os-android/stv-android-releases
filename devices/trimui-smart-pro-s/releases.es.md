@@ -138,9 +138,9 @@ y MAME, y una corrección de la carga, que podía detenerse con el LED rojo parp
 | Archivo | Contenido | Tamaño |
 |---|---|---|
 | [stv-os-0.0.2-beta-trimui-smart-pro-s-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-trimui-smart-pro-s-internal-memory.zip) | Instalación en la memoria interna | 978 MB |
-| [stv-os-0.0.2-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-trimui-smart-pro-s-microsd.img.xz) | Instalación en una tarjeta microSD | 849 MB |
-| [STV-TSPS-update-f216-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/STV-TSPS-update-f216-internal-memory.zip) | Actualización de una instalación en memoria interna | 979 MB |
-| [STV-TSPS-update-f216-microsd.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/STV-TSPS-update-f216-microsd.zip) | Actualización de una instalación en microSD | 750 MB |
+| [stv-os-0.0.2-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-trimui-smart-pro-s-microsd.img.xz) | Instalación en una tarjeta microSD | 848 MB |
+| [STV-TSPS-update-f217-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/STV-TSPS-update-f217-internal-memory.zip) | Actualización de una instalación en memoria interna | 979 MB |
+| [STV-TSPS-update-f217-microsd.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/STV-TSPS-update-f217-microsd.zip) | Actualización de una instalación en microSD | 750 MB |
 | [stv-os-0.0.2-beta-gpl-source.tar](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/stv-os-0.0.2-beta-gpl-source.tar) | Código fuente GPL: el kernel de esta versión, con sus parches y su configuración, y el resto del código GPL | 206 MB |
 | [NOTICE.txt](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/NOTICE.txt) | Componentes de terceros y licencias | |
 | [SHA256SUMS](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.2-beta/SHA256SUMS.sig) | Sumas de verificación y su firma | |
@@ -160,9 +160,6 @@ Primera versión pública. [Notas de la versión](https://github.com/stv-os-andr
 ## Problemas conocidos
 
 - Se probó en una sola consola; otros lotes de fabricación podrían comportarse distinto.
-- La actualización desde la 0.0.1-beta se probó en la instalación en memoria interna. El paquete de microSD
-  pasó las mismas comprobaciones en una computadora (firma, tipo de instalación, versiones aceptadas y
-  particiones), pero todavía no se instaló en una consola que arranca desde una tarjeta microSD.
 - Las tarjetas microSD en exFAT no se probaron con la instalación en memoria interna: use FAT32.
 - Volver al firmware de fábrica con el archivo oficial de TrimUI no se probó de principio a fin con STV OS
   instalado.

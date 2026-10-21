@@ -340,7 +340,7 @@ no more than three dots. Then press **START** on the home screen.
 Include:
 
 - the version and build shown in **STV Settings › About this console** (for example,
-  *0.0.2-beta · build f216*);
+  *0.0.2-beta · build f217*);
 - the installation type (internal memory or microSD);
 - what you did, what you expected and what happened, with a screenshot if possible (**HOME**, then **X**).
 
