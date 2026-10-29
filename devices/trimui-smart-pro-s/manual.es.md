@@ -217,12 +217,19 @@ STV OS instala y configura los emuladores. Cada sistema se abre con el de esta t
 |---|---|---|
 | PSP | **PPSSPP - STV** (predeterminado) y el PPSSPP oficial | [Optimizado para esta consola](#ppsspp---stv) |
 | Nintendo 64 | Mupen64Plus FZ | GLideN64, el renderizador más rápido en esta consola |
-| PlayStation | RetroArch (PCSX-ReARMed) | Funciona sin archivo de BIOS en la mayoría de los juegos |
+| PlayStation | RetroArch (PCSX-ReARMed) | Funciona sin archivo de BIOS en la mayoría de los juegos; con una BIOS propia en `RetroArch/system` (memoria interna) es más compatible. SwanStation queda como alternativa (necesita la BIOS). Un juego de varios discos (`(Disc 1)`, `(Disc 2)`…) aparece como uno solo, y el disco se cambia en **Select + Start › Disc Control** |
 | Game Boy Advance | RetroArch (mGBA) | |
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
 | Neo Geo, arcade, CPS-1, CPS-2, CPS-3 | RetroArch (FinalBurn Neo) | **No viene incluido** (su licencia solo permite el uso no comercial). La primera vez que se abre uno de estos juegos, *Administrar Sistemas* ofrece *Instalar core* (necesita Wi-Fi, unos 70 MB) |
 | MAME | RetroArch (MAME 2003-Plus) | **No viene incluido** (su licencia solo permite el uso no comercial). Usa los romsets de MAME 0.78; MAME 2010 y MAME 2000 quedan como alternativas para otros romsets. Se instala igual que FinalBurn Neo (necesita Wi-Fi, unos 40 MB) |
+| Nintendo GameCube | Dolphin 2609 | Viene incluido, con el mando ya configurado (L2 y R2 son los gatillos, R1 es Z, el stick derecho es el C-Stick). El sistema más exigente del catálogo: muchos juegos no llegan a velocidad completa en esta consola |
+| J2ME (juegos Java de teléfonos) | J2ME Loader 1.8.2 | Viene incluido. Un `.jar` se abre directo desde la biblioteca; el mando hace de teclado del teléfono (A es OK, B y Start son las teclas de función) |
 | Otros | RetroArch | Se agregan desde el catálogo de *Administrar Sistemas* |
+
+GameCube y J2ME muestran el bisel del sistema alrededor del juego, con el menú del emulador dentro del hueco;
+**Select + Start** abre ese menú. Cada juego J2ME se hacía en una versión por tamaño de pantalla: si el nombre
+del archivo lo dice (`Juego-176.jar`, `Juego_240x320.jar`), la consola usa esa pantalla; si no, la más común,
+240×320.
 
 ## PPSSPP - STV
 
@@ -302,8 +309,9 @@ tipo de instalación, firmado, que se instala sobre cualquier versión anterior 
 apps y ajustes. La versión anterior queda disponible para volver.
 
 1. Descargue el paquete de su instalación desde [Versiones disponibles](releases.es.md#versiones-disponibles):
-   el que termina en `-internal-memory.zip` (memoria interna) o el que termina en `-microsd.zip`. No lo
-   renombre ni lo descomprima.
+   el que termina en `-internal-memory-update.zip` (memoria interna) o el que termina en `-microsd-update.zip`.
+   No lo descomprima. En la 0.0.1-beta, renómbrelo para que el nombre empiece con `STV-TSPS-update-`; en las
+   versiones posteriores, deje el nombre como está.
 2. Cópielo en la carpeta `STV/update` del almacenamiento interno. También sirve la carpeta `Download` y, en la
    instalación en memoria interna, `STV/update` en la tarjeta.
 3. Abra **Ajustes STV › Actualización del sistema**. Encuentra el paquete, muestra sus notas y pide confirmar.
@@ -357,7 +365,7 @@ en *Instalar core* (con Wi-Fi) y después **B** para volver; el juego se abre.
 Incluya:
 
 - la versión y la compilación que muestra **Ajustes STV › Acerca de la consola** (por ejemplo,
-  *0.0.2-beta · compilación f217*);
+  *0.0.3-beta · compilación f255*);
 - el tipo de instalación (memoria interna o microSD);
 - qué hizo, qué esperaba y qué pasó, con una captura de pantalla si es posible (**HOME** y después **X**).
 

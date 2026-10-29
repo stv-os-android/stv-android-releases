@@ -6,7 +6,7 @@
 
 ![La pantalla de inicio de STV OS en la TrimUI Smart Pro S](images/es/home.png)
 
-**Última versión:** 0.0.2-beta (2026-10-20)
+**Última versión:** 0.0.3-beta (2026-10-29)
 
 **Qué es STV OS**, qué cambia en la consola y los resultados medidos en PSP: [Presentación](overview.es.md).
 
