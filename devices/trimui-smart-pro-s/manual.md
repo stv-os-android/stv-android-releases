@@ -172,7 +172,7 @@ remain available under *System*. **A** chooses, **B** goes back, left and right 
 | **Developer** | USB debugging (adb) and root access. Off on a clean install |
 | **Storage** | Space used on the internal memory and on the microSD card; in the microSD installation, also *Expand to the whole card* |
 | **System** | Restart, power off, and the full Android settings (Bluetooth pairing, keyboard, app permissions) |
-| **System language** | Android's language list. STV OS is in English and Spanish; the STV apps and Pegasus follow it |
+| **System language** | Android's language list. STV OS is in English, Spanish and Russian; the STV apps and Pegasus follow it |
 | **Date and time** | Time zone: *Coordinated Universal Time (UTC)* or a region and a city. The time sets itself over Wi-Fi |
 | **System update** | Install a new version, or go back to the previous one ([updates](#updates)) |
 | **Support the project** | A QR code to the support page |
@@ -220,7 +220,8 @@ STV OS installs and configures the emulators. Each system opens with the one in 
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
 | Neo Geo, arcade, CPS-1, CPS-2, CPS-3 | RetroArch (FinalBurn Neo) | **Not included** (its license allows only non-commercial use). The first time you open one of these games, *Manage Systems* offers *Install core* (needs Wi-Fi, about 70 MB) |
 | MAME | RetroArch (MAME 2003-Plus) | **Not included** (its license allows only non-commercial use). Uses MAME 0.78 romsets; MAME 2010 and MAME 2000 are available as alternatives for other romsets. Installed the same way as FinalBurn Neo (needs Wi-Fi, about 40 MB) |
-| Nintendo GameCube | Dolphin 2609 | Included, with the controller already set up (L2 and R2 are the triggers, R1 is Z, the right stick is the C-Stick). The most demanding system in the catalog: many games do not reach full speed on this console |
+| Nintendo GameCube | Dolphin 2609 | Included, with the controller already set up (L2 and R2 are the triggers, R1 is Z, the right stick is the C-Stick). A game with several discs (`(Disc 1)`, `(Disc 2)`…) shows up as one game, and Dolphin inserts the next disc when the game asks for it. The most demanding system in the catalog: many games do not reach full speed on this console |
+| Sega Dreamcast | RetroArch (Flycast - STV) | Included, built for this console, with the controller already set up (L1/L2 and R1/R2 are the analog triggers). Games that run on Windows CE, such as Sega Rally 2, get their own options. The BIOS is optional (`dc_boot.bin` and `dc_flash.bin` in `RetroArch/system/dc`). Each game has its own memory card, included in the saves backup |
 | J2ME (Java phone games) | J2ME Loader 1.8.2 | Included. A `.jar` opens straight from the library; the controller works as the phone keypad (A is OK, B and Start are the soft keys) |
 | Others | RetroArch | Added from the catalog in *Manage Systems* |
 
@@ -302,7 +303,7 @@ installation type, signed, that installs over any earlier version and keeps game
 The previous version stays available to go back to.
 
 1. Download the package for your installation from [Available versions](releases.md#available-versions): the
-   one ending in `-internal-memory-update.zip` or the one ending in `-microsd-update.zip`. Do not unzip it.
+   one ending in `-internal-update.zip` or the one ending in `-microsd-update.zip`. Do not unzip it.
    On 0.0.1-beta, rename it so that its name starts with `STV-TSPS-update-`; on later versions, keep its name.
 2. Copy it to the `STV/update` folder of the internal storage. The `Download` folder also works and, in the
    internal memory installation, so does `STV/update` on the card.
@@ -355,7 +356,7 @@ no more than three dots. Then press **START** on the home screen.
 Include:
 
 - the version and build shown in **STV Settings › About this console** (for example,
-  *0.0.3-beta · build f255*);
+  *0.0.4-beta · build f267*);
 - the installation type (internal memory or microSD);
 - what you did, what you expected and what happened, with a screenshot if possible (**HOME**, then **X**).
 

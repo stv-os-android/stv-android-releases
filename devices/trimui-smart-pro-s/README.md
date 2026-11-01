@@ -6,7 +6,7 @@
 
 ![The STV OS home screen on the TrimUI Smart Pro S](images/en/home.png)
 
-**Latest version:** 0.0.3-beta (2026-10-29)
+**Latest version:** 0.0.4-beta (2026-11-01)
 
 **What STV OS is**, what it changes in the console and the measured PSP results: [Overview](overview.md).
 

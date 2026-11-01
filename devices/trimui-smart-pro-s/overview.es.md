@@ -42,7 +42,9 @@ viene instalado. Qué cambia y cómo: [PPSSPP - STV](manual.es.md#ppsspp---stv) 
   vistas de juegos y una ficha de cada juego, con el tema STV Neo como alternativa. *Administrar Sistemas*
   agrega sistemas, instala cores de emuladores, busca carátulas y respalda partidas, todo desde la consola.
 - **Sticks analógicos.** Calibración desde Ajustes STV, que se aplica en todas las apps y emuladores.
-- **Otros sistemas.** RetroArch para GBA, PS1, NES, SNES, Game Boy y más; Mupen64Plus FZ para Nintendo 64.
+- **Otros sistemas.** RetroArch para GBA, PS1, NES, SNES, Game Boy y más, con Flycast compilado para esta
+  consola para Dreamcast; Mupen64Plus FZ para Nintendo 64; Dolphin para GameCube; J2ME Loader para juegos Java
+  de teléfonos.
 - **Actualizaciones.** Paquetes firmados que se instalan desde la consola, con vuelta a la versión anterior.
 
 ## Estado

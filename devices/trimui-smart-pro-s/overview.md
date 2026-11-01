@@ -40,7 +40,8 @@ PPSSPP is also installed. What changes and how: [PPSSPP - STV](manual.md#ppsspp-
   views and a details screen, with the STV Neo theme as an alternative. *Manage Systems* adds systems,
   installs emulator cores, finds box art and backs up saves, all from the console.
 - **Analog sticks.** Calibration from STV Settings, applied to every app and emulator.
-- **Other systems.** RetroArch for GBA, PS1, NES, SNES, Game Boy and more; Mupen64Plus FZ for Nintendo 64.
+- **Other systems.** RetroArch for GBA, PS1, NES, SNES, Game Boy and more, with Flycast built for this console for
+  Dreamcast; Mupen64Plus FZ for Nintendo 64; Dolphin for GameCube; J2ME Loader for Java phone games.
 - **Updates.** Signed packages installed from the console, with a way back to the previous version.
 
 ## Status

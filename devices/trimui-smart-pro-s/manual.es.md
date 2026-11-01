@@ -173,7 +173,7 @@ izquierda y derecha ajustan.
 | **Desarrollo** | Depuración por USB (adb) y acceso root. Apagados en una instalación limpia |
 | **Almacenamiento** | Espacio usado en la memoria interna y en la tarjeta microSD; en la instalación en microSD, también *Ampliar a toda la tarjeta* |
 | **Sistema** | Reiniciar, apagar y los ajustes completos de Android (vincular Bluetooth, teclado, permisos de las apps) |
-| **Idioma del sistema** | La lista de idiomas de Android. STV OS está en inglés y en español; las apps STV y Pegasus lo siguen |
+| **Idioma del sistema** | La lista de idiomas de Android. STV OS está en inglés, español y ruso; las apps STV y Pegasus lo siguen |
 | **Fecha y hora** | Zona horaria: *Tiempo universal coordinado (UTC)* o una región y una ciudad. La hora se ajusta sola con Wi-Fi |
 | **Actualización del sistema** | Instalar una versión nueva o volver a la anterior ([actualizaciones](#actualizaciones)) |
 | **Apoyar el proyecto** | Un código QR que lleva a la página de apoyo |
@@ -222,7 +222,8 @@ STV OS instala y configura los emuladores. Cada sistema se abre con el de esta t
 | Game Boy, Game Boy Color, NES, SNES | RetroArch (Gambatte, FCEUmm, Snes9x 2010) | |
 | Neo Geo, arcade, CPS-1, CPS-2, CPS-3 | RetroArch (FinalBurn Neo) | **No viene incluido** (su licencia solo permite el uso no comercial). La primera vez que se abre uno de estos juegos, *Administrar Sistemas* ofrece *Instalar core* (necesita Wi-Fi, unos 70 MB) |
 | MAME | RetroArch (MAME 2003-Plus) | **No viene incluido** (su licencia solo permite el uso no comercial). Usa los romsets de MAME 0.78; MAME 2010 y MAME 2000 quedan como alternativas para otros romsets. Se instala igual que FinalBurn Neo (necesita Wi-Fi, unos 40 MB) |
-| Nintendo GameCube | Dolphin 2609 | Viene incluido, con el mando ya configurado (L2 y R2 son los gatillos, R1 es Z, el stick derecho es el C-Stick). El sistema más exigente del catálogo: muchos juegos no llegan a velocidad completa en esta consola |
+| Nintendo GameCube | Dolphin 2609 | Viene incluido, con el mando ya configurado (L2 y R2 son los gatillos, R1 es Z, el stick derecho es el C-Stick). Un juego de varios discos (`(Disc 1)`, `(Disc 2)`…) aparece como un solo juego, y Dolphin pone el disco siguiente cuando el juego lo pide. El sistema más exigente del catálogo: muchos juegos no llegan a velocidad completa en esta consola |
+| Sega Dreamcast | RetroArch (Flycast - STV) | Viene incluido, compilado para esta consola, con el mando ya configurado (L1/L2 y R1/R2 son los gatillos analógicos). Los juegos que funcionan sobre Windows CE, como Sega Rally 2, tienen sus propias opciones. La BIOS es opcional (`dc_boot.bin` y `dc_flash.bin` en `RetroArch/system/dc`). Cada juego tiene su propia tarjeta de memoria, incluida en el respaldo de partidas |
 | J2ME (juegos Java de teléfonos) | J2ME Loader 1.8.2 | Viene incluido. Un `.jar` se abre directo desde la biblioteca; el mando hace de teclado del teléfono (A es OK, B y Start son las teclas de función) |
 | Otros | RetroArch | Se agregan desde el catálogo de *Administrar Sistemas* |
 
@@ -309,7 +310,7 @@ tipo de instalación, firmado, que se instala sobre cualquier versión anterior 
 apps y ajustes. La versión anterior queda disponible para volver.
 
 1. Descargue el paquete de su instalación desde [Versiones disponibles](releases.es.md#versiones-disponibles):
-   el que termina en `-internal-memory-update.zip` (memoria interna) o el que termina en `-microsd-update.zip`.
+   el que termina en `-internal-update.zip` (memoria interna) o el que termina en `-microsd-update.zip`.
    No lo descomprima. En la 0.0.1-beta, renómbrelo para que el nombre empiece con `STV-TSPS-update-`; en las
    versiones posteriores, deje el nombre como está.
 2. Cópielo en la carpeta `STV/update` del almacenamiento interno. También sirve la carpeta `Download` y, en la
@@ -365,7 +366,7 @@ en *Instalar core* (con Wi-Fi) y después **B** para volver; el juego se abre.
 Incluya:
 
 - la versión y la compilación que muestra **Ajustes STV › Acerca de la consola** (por ejemplo,
-  *0.0.3-beta · compilación f255*);
+  *0.0.4-beta · compilación f267*);
 - el tipo de instalación (memoria interna o microSD);
 - qué hizo, qué esperaba y qué pasó, con una captura de pantalla si es posible (**HOME** y después **X**).
 

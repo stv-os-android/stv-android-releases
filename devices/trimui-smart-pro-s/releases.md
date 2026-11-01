@@ -113,9 +113,9 @@ games, saves, apps and settings stay. One package installs over any earlier vers
 install the versions in between.
 
 1. From the latest version in [Available versions](#available-versions), download the **update** file for
-   your installation type: the one ending in `-internal-memory-update.zip` or the one ending in
+   your installation type: the one ending in `-internal-update.zip` or the one ending in
    `-microsd-update.zip`. Do not unzip it. On 0.0.1-beta, rename it so that its name starts with
-   `STV-TSPS-update-` (for example, `STV-TSPS-update-0.0.3-beta.zip`): that version only finds packages with
+   `STV-TSPS-update-` (for example, `STV-TSPS-update-0.0.4-beta.zip`): that version only finds packages with
    the old name. On 0.0.2-beta or later, do not rename it.
 2. Copy it to the `STV/update` folder: in the internal memory installation, on the microSD card or in the
    internal storage; in the microSD installation, in the internal storage. To copy it from a computer, use
@@ -131,6 +131,22 @@ details.
 
 ## Available versions
 
+### 0.0.4-beta · 2026-11-01
+
+Sega Dreamcast built in, with the Flycast core built for this console (Sega Rally 2 at full speed) and a memory
+card per game, Resident Evil 4 and games on several discs on GameCube, STV OS in Russian, PPSSPP - STV starting
+from the settings of a clean install, and updates with long file names that no longer stay in *Preparing*. [Release notes](https://github.com/stv-os-android/stv-android-releases/releases/tag/trimui-smart-pro-s-v0.0.4-beta).
+
+| File | Contents | Size |
+|---|---|---|
+| [stv-os-0.0.4-beta-trimui-smart-pro-s-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/stv-os-0.0.4-beta-trimui-smart-pro-s-internal-memory.zip) | Install on the internal memory | 1020 MB |
+| [stv-os-0.0.4-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/stv-os-0.0.4-beta-trimui-smart-pro-s-microsd.img.xz) | Install on a microSD card | 887 MB |
+| [stv-os-0.0.4-beta-trimui-smart-pro-s-internal-update.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/stv-os-0.0.4-beta-trimui-smart-pro-s-internal-update.zip) | Update an internal memory installation | 1020 MB |
+| [stv-os-0.0.4-beta-trimui-smart-pro-s-microsd-update.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/stv-os-0.0.4-beta-trimui-smart-pro-s-microsd-update.zip) | Update a microSD installation | 787 MB |
+| [stv-os-0.0.4-beta-gpl-source.tar](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/stv-os-0.0.4-beta-gpl-source.tar) | GPL source code: the kernel of this version, with its patches and configuration, and the other GPL source | 208 MB |
+| [NOTICE.txt](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/NOTICE.txt) | Third-party components and licenses | |
+| [SHA256SUMS](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.4-beta/SHA256SUMS.sig) | Checksums and their signature | |
+
 ### 0.0.3-beta · 2026-10-29
 
 Nintendo GameCube and J2ME, much faster menus with big libraries, controller vibration that no longer freezes
@@ -141,8 +157,6 @@ playing. [Release notes](https://github.com/stv-os-android/stv-android-releases/
 |---|---|---|
 | [stv-os-0.0.3-beta-trimui-smart-pro-s-internal-memory.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/stv-os-0.0.3-beta-trimui-smart-pro-s-internal-memory.zip) | Install on the internal memory | 1015 MB |
 | [stv-os-0.0.3-beta-trimui-smart-pro-s-microsd.img.xz](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/stv-os-0.0.3-beta-trimui-smart-pro-s-microsd.img.xz) | Install on a microSD card | 883 MB |
-| [stv-os-0.0.3-beta-trimui-smart-pro-s-internal-memory-update.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/stv-os-0.0.3-beta-trimui-smart-pro-s-internal-memory-update.zip) | Update an internal memory installation | 1015 MB |
-| [stv-os-0.0.3-beta-trimui-smart-pro-s-microsd-update.zip](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/stv-os-0.0.3-beta-trimui-smart-pro-s-microsd-update.zip) | Update a microSD installation | 786 MB |
 | [stv-os-0.0.3-beta-gpl-source.tar](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/stv-os-0.0.3-beta-gpl-source.tar) | GPL source code: the kernel of this version, with its patches and configuration, and the other GPL source | 206 MB |
 | [NOTICE.txt](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/NOTICE.txt) | Third-party components and licenses | |
 | [SHA256SUMS](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/SHA256SUMS) · [SHA256SUMS.sig](https://github.com/stv-os-android/stv-android-releases/releases/download/trimui-smart-pro-s-v0.0.3-beta/SHA256SUMS.sig) | Checksums and their signature | |
@@ -182,10 +196,6 @@ First public release. [Release notes](https://github.com/stv-os-android/stv-andr
 - The system is signed with Android's public test keys and SELinux runs in permissive mode. Install apps
   only from sources you trust.
 - balenaEtcher 2.1.7 does not list any disk on macOS 26: use Raspberry Pi Imager.
-- On 0.0.2-beta with the internal memory installation, the 0.0.3-beta update stays in *Preparing* and after
-  10 minutes shows *The system stopped answering*: its file name is too long for that version. Skip 0.0.3-beta
-  and update straight to the next version, which installs on 0.0.2-beta as it is. To update now instead, rename
-  the file to `stv-os-0.0.3-beta-update.zip` and choose it again.
 
 ## Verify a download
 
@@ -200,7 +210,7 @@ shasum -a 256 -c SHA256SUMS --ignore-missing
 On Windows (PowerShell), compute the checksum and compare it with the file's line in `SHA256SUMS`:
 
 ```powershell
-Get-FileHash .\stv-os-0.0.3-beta-trimui-smart-pro-s-internal-memory.zip -Algorithm SHA256
+Get-FileHash .\stv-os-0.0.4-beta-trimui-smart-pro-s-internal-memory.zip -Algorithm SHA256
 ```
 
 To check the signature, use OpenSSL 3:
