@@ -184,6 +184,11 @@ Primera versión pública. [Notas de la versión](https://github.com/stv-os-andr
 - El sistema está firmado con las claves de prueba públicas de Android y SELinux funciona en modo permisivo.
   Instale apps solo de fuentes de confianza.
 - balenaEtcher 2.1.7 no muestra ningún disco en macOS 26: use Raspberry Pi Imager.
+- En la 0.0.2-beta con la instalación en memoria interna, la actualización a la 0.0.3-beta se queda en
+  *Preparando* y a los 10 minutos muestra *El sistema dejó de responder*: el nombre del archivo es demasiado largo
+  para esa versión. Sáltese la 0.0.3-beta y actualice directamente a la versión siguiente, que se instala sobre la
+  0.0.2-beta sin cambios. Para actualizar ahora, renombre el archivo a `stv-os-0.0.3-beta-update.zip` y elíjalo de
+  nuevo.
 
 ## Verificar una descarga
 
